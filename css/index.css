@@ -151,8 +151,7 @@ p.drop-cap:first-letter {
     font-size: 4.5em;
     float: left;
     margin-top: .15em;
-    font-style: italic;
-    letter-spacing: 14px;
+    letter-spacing: 1px;
     line-height: 40px;
 }
 
@@ -179,6 +178,11 @@ p.drop-cap:first-letter {
 }
 .feed:nth-child(n + 1) {
     white-space: nowrap;
+}
+
+.feed div:nth-child(n + 1){
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 @media screen and (max-width: 490px) {
