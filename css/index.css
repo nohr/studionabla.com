@@ -106,7 +106,7 @@ body {
     grid-template-rows: 150px 45% 10%;
     grid-column-gap: 15;
     height: 100%;
-    width: auto;
+    width: 3fr;
     margin: auto;
 }
 #nabla-logo {
@@ -147,14 +147,6 @@ p {
     line-height: 26pt;
     letter-spacing: 0.5px;
 }
-p.drop-cap:first-letter {
-    font-size: 4.5em;
-    float: left;
-    margin-top: .15em;
-    letter-spacing: 1px;
-    line-height: 40px;
-}
-
 #cap {
     margin: 30px 0;
     display: flex;
@@ -179,14 +171,25 @@ p.drop-cap:first-letter {
 .feed:nth-child(n + 1) {
     white-space: nowrap;
 }
-
 .feed div:nth-child(n + 1){
     margin-top: auto;
     margin-bottom: auto;
 }
-
+@media screen and (min-width: 490px) {
+    .container {display: inline-grid;} 
+    .mobileContainer {display: none; }
+}
 @media screen and (max-width: 490px) {
     .container {display: none;} 
+    .mobileContainer {
+        display: flex; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
 }
 
 footer {
