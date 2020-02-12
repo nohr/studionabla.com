@@ -1,0 +1,111 @@
+.slider {
+    width: 241px;
+    height: 56.1vh;
+    margin: 16.5vh auto auto 4vw;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y proximity;
+}
+.slider::-webkit-scrollbar {
+    width: 0px !important;
+}
+.slider {
+    overflow: -moz-scrollbars-none;
+}
+.slider {
+    -ms-overflow-style: none;
+}
+
+.slide {
+    width: 225px;
+    flex-shrink: 0;
+    height: 112.5px;
+    margin: 18px auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.slide img {
+    width: 225px;
+        height: 112.5px;
+    border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.slide > div {
+    scroll-snap-align: start;
+}
+.arrow svg:hover,
+.arrow svg:focus,
+.arrow svg:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.slide img:hover,
+.slide img:focus,
+.slide img:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.section {
+  text-align: center; 
+  margin-top: 8px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

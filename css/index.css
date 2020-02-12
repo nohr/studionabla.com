@@ -1,0 +1,197 @@
+html {
+    background-color: #fff;
+    color: #666;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: rgb(19, 19, 19);
+        color: #999;
+        content: "dark";
+    }
+    .slider {
+        background-color: rgb(19, 19, 19);
+    }
+    p {
+        background-color: rgb(19, 19, 19);
+    }
+    .loader{
+        background-color: rgb(22, 22, 22);
+    }
+}
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #fff;
+        color: #666;
+        content: "light";
+    }
+    .slider {
+        background-color: #fff;
+    }
+    p {
+        background-color: #fff;
+    }
+    .loader{
+        background-color: rgb(255, 255, 255);
+}
+}
+
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("ArialNarrow.eot");
+    src: local("Arial Narrow"), local("ArialNarrow"),
+        url("font/ArialNarrow.ttf") format("truetype"),
+        url("font/ArialNarrow.svg#ArialNarrow") format("svg");
+}
+body {
+    font-family: "Arial Narrow";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 0 !important;
+}
+body {
+    overflow: -moz-scrollbars-none;
+}
+body {
+    -ms-overflow-style: none;
+}
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden{
+    animation: fadeOut 2.5s;
+    animation-fill-mode: forwards;
+}
+.loader > svg{
+    height: 60px;
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+.container {
+    writing-mode: horizontal-tb;
+    display: inline-grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-gap: 50px;
+    margin: 50px 50px 0px 50px;
+    position: static;
+    overflow-x: auto;
+    touch-action: none;
+}
+.Main {
+    display: grid;
+    grid-template-rows: 150px 45% 10%;
+    grid-column-gap: 15;
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+#nabla-logo {
+    display: block;
+    margin: auto auto;
+}
+#nabla-logo svg {
+    height: 50px;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+    cursor: pointer;
+    
+}
+ #nabla-logo svg:active {
+    background-image: url("../img/nabla-h.svg");
+} 
+
+.text-slider{
+    
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y proximity;
+    margin-top: 100px;
+    height: 100%;
+}
+
+.textBox {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+a {
+    color: #fc4302;
+    text-decoration: none;
+}
+p {
+    padding: auto 30px auto;
+    margin: 0px;
+    line-height: 26pt;
+    letter-spacing: 0.5px;
+}
+p.drop-cap:first-letter {
+    font-size: 4.5em;
+    float: left;
+    margin-top: .15em;
+    font-style: italic;
+    letter-spacing: 14px;
+    line-height: 40px;
+}
+
+#cap {
+    margin: 30px 0;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 16px;
+}
+#c1,
+#c2,
+#c3,
+#c4 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#capTitle{
+    font-weight: 700;
+}
+.feed {
+    height: 100%;
+    width: 225px;
+    margin: auto auto 50px;
+}
+.feed:nth-child(n + 1) {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 490px) {
+    .container {display: none;} 
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    z-index: 100 !important;
+    line-height: 2;
+    font-size: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
