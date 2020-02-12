@@ -41,73 +41,73 @@ function placeText(y) {
     } else {
             if (id == "1") {
                 text.innerHTML = text1;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Nohri";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2019";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  3D Animation";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Animation";
                     text.style.content = "1";
             } else if (id == "2") {
                 text.innerHTML = text2;
                     c1.innerHTML = "Student Work";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2020";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  3D Animation";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>  3D Animation";
                     text.style.content = "2";
             } else if (id == "3") {
                 text.innerHTML = text3;
                     c1.innerHTML = "Student Work";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2020";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  3D Modelling";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Modelling";
                     text.style.content = "3";
             } else if (id == "4") {
                 text.innerHTML = text4;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Tidal";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2016";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe <br> MeLo-X";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Sound Design";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span><br> Tidal";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe <br> MeLo-X";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>  Sound Design";
                     text.style.content = "4";         
             } else if (id == "5") {
                 text.innerHTML = text5;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Celine Clarke";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2019";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Sound Recording <br> Sound Design";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br> Celine Clarke";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording <br> Sound Design";
                     text.style.content = "5";
             } else if (id == "6") {
                 text.innerHTML = text6;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Nohri";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2019";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Web Development <br> Song Artwork";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development <br> Song Artwork";
                     text.style.content = "6";
             } else if (id == "7") {
                 text.innerHTML = text7;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Heat.wav";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2017";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Wordmark Design";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Heat.wav";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2017";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design";
                     text.style.content = "7";
             } else if (id == "8") {
                 text.innerHTML = text8;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  NXGN";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2016";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Wordmark Design <br> Song Artwork";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  NXGN";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2016";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design <br> Song Artwork";
                     text.style.content = "8";
             } else if (id == "9") {
                 text.innerHTML = text9;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Nohri";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2018";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span> A. Eboigbe <br> J. McGarrell <br> K. Castro";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span> Album Artwork";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe <br> J. McGarrell <br> K. Castro";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br> Album Artwork";
                     text.style.content = "9";
             } else if (id == "10") {
                 text.innerHTML = text10;
-                    c1.innerHTML = "<span id ='capTitle'>Client |</span>  Mia Gladstone";
-                    c2.innerHTML = "<span id ='capTitle'>Year |</span>  2018";
-                    c3.innerHTML = "<span id ='capTitle'>Team |</span>  A. Eboigbe <br> Mia Gladstone";
-                    c4.innerHTML = "<span id ='capTitle'>Services |</span>  Song Artwork";
+                    c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Mia Gladstone";
+                    c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe <br> Mia Gladstone";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Song Artwork";
                     text.style.content = "10";
             } 
     };  
