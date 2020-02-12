@@ -48,7 +48,8 @@ __SVGATOR_PLAYER__.build({"root":"e2mlb1606uip1","animations":[{"duration":1500,
                     e2mlb1606uip8.style.fill = "rgb(19, 19, 19)";
                     e2mlb1606uip9.style.fill = "rgb(19, 19, 19)";
 
-        }else {
+        }else if (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: light)").matches) {
                     e2mlb1606uip7.style.fill = "rgb(255, 255, 255)";
                     e2mlb1606uip8.style.fill = "rgb(255, 255, 255)";
                     e2mlb1606uip9.style.fill = "rgb(255, 255, 255)";
