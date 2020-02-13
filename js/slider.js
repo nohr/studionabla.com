@@ -6,9 +6,7 @@ function placeFeed(y) {
         } else {
             x.style.display = "none";
         }
-        
     } else {
-        return;
     }
 }
 function checkFeed() {
@@ -21,6 +19,7 @@ function checkFeed() {
     }
 }
 
+
 function placeText(y) {
     var id = y.toString();
     var text = document.getElementById("text");
@@ -28,8 +27,6 @@ function placeText(y) {
     var c2 = document.getElementById("c2");
     var c3 = document.getElementById("c3");
     var c4 = document.getElementById("c4");
-    if (text.style.content == id) {
-    }
     
     if (id == "0") {
         text.innerHTML = text0;
@@ -44,14 +41,15 @@ function placeText(y) {
                     c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Animation";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
                     text.style.content = "1";
+
             } else if (id == "2") {
                 text.innerHTML = text2;
                     c1.innerHTML = "Student Work";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>  3D Animation";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
                     text.style.content = "2";
             } else if (id == "3") {
                 text.innerHTML = text3;
@@ -64,7 +62,7 @@ function placeText(y) {
                 text.innerHTML = text4;
                     c1.innerHTML = "<span id ='capTitle'>Client</span><br> Tidal";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
-                    c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe <br> MeLo-X";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe & MeLo-X";
                     c4.innerHTML = "<span id ='capTitle'>Services</span><br>  Sound Design";
                     text.style.content = "4";         
             } else if (id == "5") {
@@ -72,14 +70,14 @@ function placeText(y) {
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br> Celine Clarke";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording <br> Sound Design";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording & Sound Design";
                     text.style.content = "5";
             } else if (id == "6") {
                 text.innerHTML = text6;
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development <br> Song Artwork";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development & Song Artwork";
                     text.style.content = "6";
             } else if (id == "7") {
                 text.innerHTML = text7;
@@ -93,20 +91,20 @@ function placeText(y) {
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  NXGN";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2016";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design <br> Song Artwork";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design & Song Artwork";
                     text.style.content = "8";
             } else if (id == "9") {
                 text.innerHTML = text9;
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe <br> J. McGarrell <br> K. Castro";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe & Jheyda McGarrell & Kyle Castro";
                     c4.innerHTML = "<span id ='capTitle'>Services</span> <br> Album Artwork";
                     text.style.content = "9";
             } else if (id == "10") {
                 text.innerHTML = text10;
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Mia Gladstone";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe <br> Mia Gladstone";
+                    c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe & Mia Gladstone";
                     c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Song Artwork";
                     text.style.content = "10";
             } 
@@ -121,10 +119,6 @@ function scrollWin(y) {
     var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
     x = x * plusOrMinus;
     z = z * plusOrMinus;
-    if (plusOrMinus === -1 || 1){
-        console.log(x);
-        console.log(z);
-        }
     function recoil(){
         slider.scrollBy({
             top: z,
@@ -151,4 +145,5 @@ function myFunction(y) {
     placeFeed(y);
     placeText(y);
     scrollWin(y);
+
 }

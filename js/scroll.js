@@ -1,10 +1,12 @@
 var edgeSize = 200;
 var timer = null;
 
+
 window.addEventListener( "mousemove", handleMousemove, false );
 
 drawEdge();
 
+ 
 // --------------------------------------------------------------------------- //
 // --------------------------------------------------------------------------- //
 
@@ -43,6 +45,7 @@ function handleMousemove( event ) {
     var isInRightEdge = ( viewportX > edgeRight );
     var isInTopEdge = ( viewportY < edgeTop );
     var isInBottomEdge = ( viewportY > edgeBottom );
+
 
     // If the mouse is not in the viewport edge, there's no need to calculate
     // anything else.
@@ -133,6 +136,7 @@ function handleMousemove( event ) {
         // Then, that use that percentage to back-off from the "max" step value.
         var maxStep = 50;
 
+        /*
         // Should we scroll left?
         if ( isInLeftEdge && canScrollLeft ) {
 
@@ -148,22 +152,7 @@ function handleMousemove( event ) {
             nextScrollX = ( nextScrollX + ( maxStep * intensity ) );
 
         }
-
-        // Should we scroll up?
-        if ( isInTopEdge && canScrollUp ) {
-
-            var intensity = ( ( edgeTop - viewportY ) / edgeSize );
-
-            nextScrollY = ( nextScrollY - ( maxStep * intensity ) );
-
-        // Should we scroll down?
-        } else if ( isInBottomEdge && canScrollDown ) {
-
-            var intensity = ( ( viewportY - edgeBottom ) / edgeSize );
-
-            nextScrollY = ( nextScrollY + ( maxStep * intensity ) );
-
-        }
+        */
 
         // Sanitize invalid maximums. An invalid scroll offset won't break the
         // subsequent .scrollTo() call; however, it will make it harder to

@@ -1,4 +1,4 @@
-var text0 = "Studio Nabla is a multi-disciplinary art and design studio founded by Aite Eboigbe in 2017. Here are 10 selected works to give an idea of what we do here. In order to view a work, scroll through the slider to the left, select a work, and scroll horizontally to view. <br> <br> <span style='letter-spacing:2px;'> If you would like to inquire about our services, feel free to contact us at <span><a href='mailto:aite@studionabla.com'>aite@studionabla.com</a></span></span>.";
+var text0 = "Studio Nabla is a multi-disciplinary art and design studio founded by Aite Eboigbe in 2017. In order to view a work, scroll through the sidebar to the left, select a work, and scroll horizontally to view. <br> <br> <span style='letter-spacing:2px;'> If you would like to inquire about our services, feel free to contact us at <span><a href='mailto:aite@studionabla.com'>aite@studionabla.com</a></span></span>.";
 var text1 = "";
 var text2 = "";
 var text4 = "";
