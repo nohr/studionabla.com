@@ -51,6 +51,8 @@ body {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 4vh;
 }
 body,
 html {
@@ -91,34 +93,38 @@ body {
         visibility: hidden;
     }
 }
+.bigContainer{
+    display:inline-grid;
+    grid-template-rows: 200px 85%;
+    width: 100%;
+}
 .container {
     writing-mode: horizontal-tb;
     display: inline-grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 20vw 40vw 20vw;
     grid-gap: 50px;
-    margin: 50px 50px 0px 50px;
+    margin: 8px 50px 0px 50px;
     position: static;
     overflow-x: auto;
     touch-action: none;
 }
 .Main {
     display: grid;
-    grid-template-rows: 150px 45% 10%;
+    grid-template-rows: 50% 50%;
     grid-column-gap: 15;
-    height: 100%;
     width: 3fr;
-    margin: auto;
+    margin: 6vh 0 auto;
 }
 #nabla-logo {
     display: block;
-    margin: auto auto;
+    margin: auto ;
+
 }
 #nabla-logo svg {
     height: 50px;
     -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
     cursor: pointer;
-    
 }
  #nabla-logo svg:active {
     background-image: url("../img/nabla-h.svg");
@@ -129,13 +135,10 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: y proximity;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: auto;
 }
-.textBox {
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 a {
     color: #fc4302;
     text-decoration: none;
@@ -143,40 +146,35 @@ a {
 p {
     padding: auto 30px auto;
     margin: 0px;
-    line-height: 26pt;
-    letter-spacing: 0.5px;
 }
 #cap {
     margin-left: 30px;
     display: flex;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    font-size: 16px;
     width: 39vw;
+    text-align:center;
 }
 #c1,
 #c2,
 #c3,
 #c4 {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
 }
 #capTitle{
     font-weight: 700;
     text-decoration: underline;
-    line-height: 20px;
 }
 .feed {
     height: 100%;
-    width: 225px;
-    margin: auto auto 50px;
+    margin-right: 50px;
+
 }
 .feed:nth-child(n + 1) {
+    vertical-align: middle;
     white-space: nowrap;
 }
-.feed div:nth-child(n + 1){
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 @media screen and (min-width: 491px) {
     .container {display: inline-grid;} 
     .mobileContainer {display: none; }
