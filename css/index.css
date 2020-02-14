@@ -1,6 +1,6 @@
 html {
-    background-color: #fff;
-    color: #666;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 * {
     -webkit-font-smoothing: antialiased;
@@ -8,46 +8,39 @@ html {
 }
 @media (prefers-color-scheme: dark) {
     html {
-        background-color: rgb(19, 19, 19);
-        color: #999;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         content: "dark";
     }
     .slider {
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(0, 0, 0);
     }
     p {
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(0, 0, 0);
     }
     .loader{
-        background-color: rgb(22, 22, 22);
+        background-color: rgb(0, 0, 0);
     }
 }
 @media (prefers-color-scheme: light) {
     html {
-        background-color: #fff;
-        color: #666;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         content: "light";
     }
     .slider {
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
     }
     p {
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
     }
     .loader{
         background-color: rgb(255, 255, 255);
 }
 }
 
-@font-face {
-    font-family: "Arial Narrow";
-    src: url("ArialNarrow.eot");
-    src: local("Arial Narrow"), local("ArialNarrow"),
-        url("font/ArialNarrow.ttf") format("truetype"),
-        url("font/ArialNarrow.svg#ArialNarrow") format("svg");
-}
 body {
-    font-family: "Arial Narrow";
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
@@ -80,11 +73,13 @@ body {
     align-items: center;
 }
 .loader.hidden{
-    animation: fadeOut 2.5s;
+    animation: fadeOut 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
-.loader > svg{
-    height: 60px;
+
+#loaderSVG > svg{
+    height: 11.7vh;
 }
 
 @keyframes fadeOut{
@@ -99,11 +94,11 @@ body {
     width: 100%;
 }
 .container {
-    writing-mode: horizontal-tb;
+    
     display: inline-grid;
-    grid-template-columns: 20vw 40vw 20vw;
+    grid-template-columns: 8vw 20vw 40vw 20vw;
     grid-gap: 50px;
-    margin: 8px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     position: static;
     overflow-x: auto;
     touch-action: none;
@@ -113,15 +108,17 @@ body {
     grid-template-rows: 50% 50%;
     grid-column-gap: 15;
     width: 3fr;
-    margin: 6vh 0 auto;
+    margin: 0 60px 0 0;
 }
 #nabla-logo {
     display: block;
-    margin: auto ;
+    margin: 2vh 60px auto;
+    transform: rotate(90deg);
+    width: 150px;
 
 }
 #nabla-logo svg {
-    height: 50px;
+    height: 11.7vh;
     -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
     cursor: pointer;
@@ -146,13 +143,13 @@ a {
 p {
     padding: auto 30px auto;
     margin: 0px;
+    text-transform: lowercase;
 }
 #cap {
+    text-transform: lowercase;
     margin-left: 30px;
     display: flex;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 39vw;
-    text-align:center;
+    grid-template-rows: .5fr .5fr .75fr 1fr;
 }
 #c1,
 #c2,
@@ -161,9 +158,8 @@ p {
     margin-top: 1.3vh;
     margin-bottom: 1.3vh;
 }
-#capTitle{
-    font-weight: 700;
-    text-decoration: underline;
+#capTitle:before, #capTitle:after{
+    content: " ++ ";
 }
 .feed {
     height: 100%;
