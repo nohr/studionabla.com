@@ -1,4 +1,6 @@
 html {
+    overflow: hidden;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
@@ -89,33 +91,33 @@ body {
     }
 }
 .bigContainer{
-    display:inline-grid;
-    grid-template-rows: 200px 85%;
+    display: flex;
+    grid-template-rows: 100%;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .container {
     
     display: inline-grid;
-    grid-template-columns: 8vw 20vw 40vw 20vw;
+    grid-template-columns: 15vw 20vw 37vw 20vw;
     grid-gap: 50px;
-    margin: 0px 50px 0px 50px;
-    position: static;
+    margin: auto;
+    height: 100%;
     overflow-x: auto;
     touch-action: none;
 }
 .Main {
     display: grid;
     grid-template-rows: 50% 50%;
-    grid-column-gap: 15;
-    width: 3fr;
-    margin: 0 60px 0 0;
+    margin: auto;
 }
 #nabla-logo {
     display: block;
-    margin: 2vh 60px auto;
+    margin: 16vh 11vw auto;
     transform: rotate(90deg);
-    width: 150px;
-
 }
 #nabla-logo svg {
     height: 11.7vh;
@@ -162,9 +164,7 @@ p {
     content: " ++ ";
 }
 .feed {
-    height: 100%;
-    margin-right: 50px;
-
+    margin: auto;
 }
 .feed:nth-child(n + 1) {
     vertical-align: middle;

@@ -1,7 +1,7 @@
 .slider {
     width: 241px;
     height: 56vmin;
-    margin-left: 60px;
+    margin: auto;
     display: inline-block;
     overflow-x: hidden;
     overflow-y: scroll;
