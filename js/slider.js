@@ -55,7 +55,7 @@ function placeText(y) {
                     c1.innerHTML = "";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Modelling";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Modelling & Instagram Filter Creation";
                     text.style.content = "3";
             } else if (id == "4") {
                 text.innerHTML = text4;
