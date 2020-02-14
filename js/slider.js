@@ -43,17 +43,16 @@ function placeText(y) {
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
                     c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
                     text.style.content = "1";
-
             } else if (id == "2") {
                 text.innerHTML = text2;
-                    c1.innerHTML = "Student Work";
+                    c1.innerHTML = "";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
                     c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
                     text.style.content = "2";
             } else if (id == "3") {
                 text.innerHTML = text3;
-                    c1.innerHTML = "Student Work";
+                    c1.innerHTML = "";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
                     c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Modelling";
@@ -70,14 +69,14 @@ function placeText(y) {
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br> Celine Clarke";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording & Sound Design";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording, Sound Design & Score";
                     text.style.content = "5";
             } else if (id == "6") {
                 text.innerHTML = text6;
                     c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
                     c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development & Song Artwork";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development & EP Artwork";
                     text.style.content = "6";
             } else if (id == "7") {
                 text.innerHTML = text7;
@@ -139,11 +138,19 @@ function scrollWin(y) {
     }
 }
 
+function hideSlide(y) {
+var slider = document.querySelector(".slider");
+    if (y !=  0) {
+        slider.style.display='none';
+    } else {
+        slider.style.display='block';
+    }
+}
 
 function myFunction(y) {
     checkFeed();
     placeFeed(y);
     placeText(y);
     scrollWin(y);
-
+    hideSlide(y)
 }
