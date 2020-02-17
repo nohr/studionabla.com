@@ -189,8 +189,8 @@ function drawEdge() {
     edge.style.zIndex = "-3"; 
     edge.style.top = edgeSize + "px";
     edge.style.bottom = edgeSize + "px";
-    edge.style.left = edgeSize - 80 + "px";
-    edge.style.right = edgeSize + edgeSize - 60 + "px";
+    edge.style.left = edgeSize + 80 + "px";
+    edge.style.right = edgeSize + edgeSize - 80 + "px";
     edge.style.border = "1px solid #fc4302";
     edge.style.borderRadius = "5px 5px 5px 5px";
     document.body.appendChild(edge);
