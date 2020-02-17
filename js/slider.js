@@ -41,14 +41,14 @@ function placeText(y) {
                     c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation & Wordmark Design";
                     text.style.content = "1";
             } else if (id == "2") {
                 text.innerHTML = text2;
                     c1.innerHTML = "";
                     c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
                     c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation";
+                    c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Modelling & Animation";
                     text.style.content = "2";
             } else if (id == "3") {
                 text.innerHTML = text3;
