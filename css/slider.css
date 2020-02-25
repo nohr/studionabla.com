@@ -1,11 +1,14 @@
 .slider {
-    height: 56vmin;
+    top: 200px;
+    bottom: 200px;
+    height: calc(100vh - 402px);
+    width: 255px;
     margin: auto;
     display: inline-block;
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
 }
 .slider::-webkit-scrollbar {
     width: 0px !important;
@@ -27,38 +30,30 @@
 }
 
 .slide img:active{
-border: 1px solid #fc4302;
+border: 1px solid #fc121d;
 border-radius: 5px 5px 5px 5px;
 }
 .slide img {
-    width: 225px;
-        height: 112.5px;
-    border-radius: 5px 5px 5px 5px;
+  width: 225px;
+  height: 112.5px;
+  border-radius: 5px 5px 5px 5px;
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
+box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
 }
 
 .slide > div {
     scroll-snap-align: start;
 }
 
-.slide img:hover,
-.slide img:focus,
-.slide img:active {
-  -webkit-animation-name: hvr-pulse;
-  animation-name: hvr-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
 
 @-webkit-keyframes hvr-pulse {
   25% {
