@@ -129,6 +129,8 @@ body {
 }
 #nabla-logo #logo {
     height: 30px;
+    position: absolute;
+    left: 79px;
 }
 #nabla-logo svg {
     height: 11.7vh;
