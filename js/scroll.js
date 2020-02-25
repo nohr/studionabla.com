@@ -32,6 +32,7 @@ function handleMousemove( event ) {
     var viewportWidth = document.documentElement.clientWidth;
     var viewportHeight = document.documentElement.clientHeight;
 
+
     // Next, we need to determine if the mouse is within the "edge" of the
     // viewport, which may require scrolling the window. To do this, we need to
     // calculate the boundaries of the edge in the viewport (these coordinates
@@ -45,7 +46,7 @@ function handleMousemove( event ) {
     var isInRightEdge = ( viewportX > edgeRight );
     var isInTopEdge = ( viewportY < edgeTop );
     var isInBottomEdge = ( viewportY > edgeBottom );
-
+    console.log(edgeLeft);
 
     // If the mouse is not in the viewport edge, there's no need to calculate
     // anything else.
@@ -117,8 +118,6 @@ function handleMousemove( event ) {
         var currentScrollY = window.pageYOffset;
 
         // Determine if the window can be scrolled in any particular direction.
-        var canScrollUp = ( currentScrollY > 0 );
-        var canScrollDown = ( currentScrollY < maxScrollY );
         var canScrollLeft = ( currentScrollX > 0 );
         var canScrollRight = ( currentScrollX < maxScrollX );
 
@@ -136,7 +135,6 @@ function handleMousemove( event ) {
         // Then, that use that percentage to back-off from the "max" step value.
         var maxStep = 50;
 
-        /*
         // Should we scroll left?
         if ( isInLeftEdge && canScrollLeft ) {
 
@@ -152,7 +150,7 @@ function handleMousemove( event ) {
             nextScrollX = ( nextScrollX + ( maxStep * intensity ) );
 
         }
-        */
+  
 
         // Sanitize invalid maximums. An invalid scroll offset won't break the
         // subsequent .scrollTo() call; however, it will make it harder to
@@ -190,8 +188,8 @@ function drawEdge() {
     edge.style.top = edgeSize + "px";
     edge.style.bottom = edgeSize + "px";
     edge.style.left = edgeSize + 80 + "px";
-    edge.style.right = edgeSize + edgeSize - 80 + "px";
-    edge.style.border = "1px solid #fc4302";
+    edge.style.right =  edgeSize + 81 + "px";
+    edge.style.border = "1px solid #fc121d";
     edge.style.borderRadius = "5px 5px 5px 5px";
     document.body.appendChild(edge);
 }

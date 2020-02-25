@@ -27,15 +27,17 @@ function placeText(y) {
     var c2 = document.getElementById("c2");
     var c3 = document.getElementById("c3");
     var c4 = document.getElementById("c4");
-    
+    var cap = document.querySelector(".caption")
     if (id == "0") {
         text.innerHTML = text0;
+            cap.style.display = "none";
             c1.innerHTML = "";
             c2.innerHTML = "";
             c3.innerHTML = "";
             c4.innerHTML = "";
             text.style.content = "0";
     } else {
+        cap.style.display = "block";
             if (id == "1") {
                 text.innerHTML = text1;
                     c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
