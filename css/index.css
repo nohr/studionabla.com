@@ -70,7 +70,7 @@ body {
 }
 .loader.hidden{
     z-index: -4;
-    animation: fadeOut 4s;
+    animation: fadeOut 2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
