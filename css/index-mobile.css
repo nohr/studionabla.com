@@ -175,6 +175,7 @@ p {
     order: 2;
 }
 .feed:nth-child(n + 1) {
+    margin-top: 5px;
     vertical-align: middle;
     display: inline-block;
 }
