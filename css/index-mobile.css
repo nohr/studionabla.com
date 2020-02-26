@@ -1,4 +1,5 @@
 html {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -70,7 +71,11 @@ body {
 }
 
 #loaderSVG > svg{
-    height: 50px;
+    height: 30px;
+}
+
+#loaderSVG > #ball-triangle{
+    height: 30px;
 }
 @keyframes fadeOut{
     100%{
@@ -93,7 +98,7 @@ body {
     grid-gap: 0px;
     margin: auto 0;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 100px);
     overflow-x: auto;
     touch-action: none;
 }

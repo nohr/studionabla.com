@@ -78,6 +78,9 @@ body {
 #loaderSVG > svg{
     height: 50px;
 }
+#loaderSVG > #ball-triangle{
+    height: 50px;
+}
 @keyframes fadeOut{
     100%{
         opacity: 0%;
