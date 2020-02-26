@@ -152,9 +152,22 @@ var slider = document.querySelector(".slider");
 }
 
 function myFunction(y) {
+    if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        document.getElementById("logo1").datasrc = "slider/1b-w.svg";
+        document.getElementById("logo2").datasrc = "slider/7a-w.svg";
+        document.getElementById("logo12").datasrc = "slider/8a-w.svg";
+    } else {
+        document.getElementById("logo1").datasrc = "slider/1b.svg";
+        document.getElementById("logo2").datasrc = "slider/7a.svg";
+        document.getElementById("logo12").datasrc = "slider/8a.svg";
+    }
     checkFeed();
     placeFeed(y);
     placeText(y);
     scrollWin(y);
     hideSlide(y)
+    
 }
