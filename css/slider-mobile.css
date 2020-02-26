@@ -1,4 +1,6 @@
 .slider {
+  position: relative;
+  bottom: 60px;
     height: 150px;
     width: calc(100vw - 62px);
     margin: auto;
