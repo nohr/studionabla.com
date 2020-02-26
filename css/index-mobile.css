@@ -65,7 +65,7 @@ body {
 }
 .loader.hidden{
     z-index: -100;
-    animation: fadeOut 2s;
+    animation: fadeOut .3s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
