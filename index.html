@@ -215,18 +215,6 @@
         <script>
             window.onload = function() {
                 placeText(0);
-                if (
-                    window.matchMedia &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches
-                ) {
-                    document.getElementById("logo1").src = "slider/1b-w.svg";
-                    document.getElementById("logo2").src = "slider/7a-w.svg";
-                    document.getElementById("logo12").src = "slider/8a-w.svg";
-                } else {
-                    document.getElementById("logo1").src = "slider/1b.svg";
-                    document.getElementById("logo2").src = "slider/7a.svg";
-                    document.getElementById("logo12").src = "slider/8a.svg";
-                }
                 const loader = document.querySelector(".loader");
                 loader.className += " hidden";
     }
