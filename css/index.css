@@ -78,7 +78,7 @@ body {
 #loaderSVG img{
     height: 50px;
 }
-#loaderSVG > #ball-triangle{
+#loaderSVG #ball-triangle{
     height: 50px;
 }
 @keyframes fadeOut{
@@ -164,13 +164,25 @@ p {
 .feed {
     margin: auto;
 }
-.feed img,.feed video, .feed iframe,.feed svg {
+.feed img:not(.ball-triangle),.feed video, .feed iframe,.feed svg {
     height: 50vw;
+    border: 1px solid #fc121d;
+}
+#tidal{
+    height: 50vw;
+    width: 80vw;
+}
+[data-src] {
+    width: 50px !important;
+    height: 50px !important;
 }
 
 .feed:nth-child(n + 1) {
     vertical-align: middle;
     white-space: nowrap;
+}
+#placeHolder{
+    display: none;
 }
 
 footer {

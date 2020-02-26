@@ -179,9 +179,47 @@ p {
     vertical-align: middle;
     display: inline-block;
 }
-.feed img,.feed video, .feed iframe,.feed svg {
+.feed img,.feed video,.feed svg{
     height: 40vw;
+    border: 1px solid #fc121d;
 }
+[data-src] {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.feed p{
+    margin: auto 30px;
+    height: 40vw;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+#tidal{
+    height: 47vw;
+    width: 84vw;
+}
+@media screen and (min-width: 701px) {
+#web{
+    height: 40vw; 
+    width: 60vw;  
+}
+#placeholder{
+    display: none;  
+    line-height: 20vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #web{
+        display: none;
+    }
+    #placeholder{
+    display: inline-block;  
+    line-height: 20vw;
+    }
+  }
 
 footer {
     position: fixed;
