@@ -14,8 +14,8 @@ html {
         color: rgb(255, 255, 255);
         content: "dark";
     }
-    footer {
-        background-color: rgb(0, 0, 0);
+    #darkness {
+        background:rgba(0, 0, 0, 0.85);
     }
     .loader{
         background-color: rgb(0, 0, 0);
@@ -27,8 +27,8 @@ html {
         color: rgb(0, 0, 0);
         content: "light";
     }
-    footer {
-        background-color: rgb(255, 255, 255);
+    #darkness {
+        background:rgba(255, 255, 255, 0.85);
     }
     .loader{
         background-color: rgb(255, 255, 255);
@@ -59,7 +59,7 @@ body {
 }
 .loader{
     position: fixed;
-    z-index: 99;
+    z-index: 8;
     top: 0;
     left: 0;
     width: 100%;
@@ -139,6 +139,15 @@ body {
     transition: background-image 0.5s;
     cursor: pointer;
 }
+#darkness {
+    display:none;
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:5;
+}
 .text-slider {
     margin: auto;
 }
@@ -182,7 +191,7 @@ footer {
     position: fixed;
     text-align: center;
     vertical-align: middle;
-    z-index: 100 !important;
+    z-index: 9 !important;
     line-height: 2;
     bottom: 0;
     width: 100%;
