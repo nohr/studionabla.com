@@ -135,69 +135,72 @@
             </div>
             <!-- FEED -->
             <div class="feed">
-                <div id="0" style="display: none;">
+                <div id="0" style="display: inline-block;">
+                    <img class="ball-triangle" height="50px" src="img/ball-triangle.svg"/>
                 </div>
                 <div id="1" style="display: none;">
                     <video autoplay controls preload="lazy" loop >
                         <source src="slider/1a.mp4" type="video/mp4" />
                     </video>
-                    <img id="logo1" src="slider/1b.svg" loading="lazy"/>
-                    <img src="slider/1c.png" loading="lazy"/>
+                    <img id="logo1" data-src="slider/1b.svg" loading="lazy"/>
+                    <img data-src="slider/1c.png" loading="lazy"/>
                 </div>
                 <div id="2" style="display: none;">
                     <video autoplay controls loop>
                         <source src="slider/2a.mp4" type="video/mp4" />
                     </video>
-                    <img src="slider/2b.png" />
-                    <img src="slider/2c.jpeg" />
+                    <img data-src="slider/2b.png" />
+                    <img data-src="slider/2c.jpeg" />
                 </div>
                 <div id="3" style="display: none;">
-                    <img src="slider/3a.jpg" />
-                    <img src="slider/3b.jpg" />
+                    <img data-src="slider/3a.jpg" />
+                    <img data-src="slider/3b.jpg" />
                     <video autoplay controls loop>
                         <source src="slider/3c.MOV" type="video/mp4" />
                     </video>
-                    <img src="slider/3d.jpg" />
+                    <img data-src="slider/3d.jpg" />
                 </div>
                 <div id="4" style="display: none;">
                     <iframe
-                        src="https://player.vimeo.com/video/300437688?color=fc4302&title=0&byline=0&portrait=0"
+                        id ="tidal"
+                        data-src="https://player.vimeo.com/video/300437688?color=fc4302&title=0&byline=0&portrait=0"
                         width="600"
-                    
                         frameborder="0"
                         allow="autoplay; fullscreen"
                         allowfullscreen
                     ></iframe>
                 </div>
                 <div id="5" style="display: none;">
-                    <img src="slider/5a.jpeg" />
-                    <img src="slider/5b.JPG" />
+                    <img data-src="slider/5a.jpeg" />
+                    <img data-src="slider/5b.JPG" />
                 </div>
                 <div id="6" style="display: none;">
                     <iframe
-                    src="https://nohri.net/"
-                
+                    id="web"
+                    data-src="https://nohri.net/"
+                    style="margin-right: 15px;"
                     width="500"
                 ></iframe>
-                <img style="margin-left: 30px;" src="slider/6b.png" />
+                <p id="placeHolder"> visit <a href='https://nohri.net/'>nohri.net</a></p>
+                <img data-src="slider/6b.png" style="margin-left: 15px;" />
                 </div>
                 <div id="7" style="display: none;">
-                    <img src="slider/7b.png"/>
-                    <img id="logo2" src="slider/7a.svg" />
+                    <img data-src="slider/7b.png"/>
+                    <img id="logo2" data-src="slider/7a.svg" />
                 </div>
                 <div id="8" style="display: none;">
-                    <img src="slider/8b.jpg" />
-                    <img id="logo12" src="slider/8a.svg" />
+                    <img data-src="slider/8b.jpg" />
+                    <img id="logo12" data-src="slider/8a.svg" />
                 </div>
                 <div id="9" style="display: none;">
-                    <img src="slider/9a.jpg" />
-                    <img src="slider/9b.jpg" />
-                    <img src="slider/9c.jpeg" />
-                    <img src="slider/9d.jpeg" />
+                    <img data-src="slider/9a.jpg" />
+                    <img data-src="slider/9b.jpg" />
+                    <img data-src="slider/9c.jpeg" />
+                    <img data-src="slider/9d.jpeg" />
                 </div>
                 <div id="10" style="display: none;">
-                    <img src="slider/10a.jpg" />
-                    <img src="slider/10b.jpg" />
+                    <img data-src="slider/10a.jpg" />
+                    <img data-src="slider/10b.jpg" />
                 </div>
             </div>
         </div>
@@ -252,6 +255,35 @@
     });
 });
 } 
+// lazy loader
+
+        const images = document.querySelectorAll("[data-src]");
+        function preloadImages (img){
+            const src = img.getAttribute("data-src");
+            if(!src){
+                return;
+            }
+            img.src = src;
+            img.removeAttribute("data-src")
+        }
+
+        const imgOptions = {
+            threshold: 1,
+            rootMrgin: "0px 0px -500px 0px"
+        };
+        const imgObserver = new IntersectionObserver((entries, 
+            imgObserver) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting){
+                        return;
+                    } else {
+                        preloadImages(entry.target);
+                    }
+                });
+            },imgOptions);
+        images.forEach(image => {
+            imgObserver.observe(image);
+        })
         </script>
         <script type='text/javascript' src="js/scroll.js"></script> 
     </body>
