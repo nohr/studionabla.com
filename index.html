@@ -232,13 +232,15 @@
                 this.scrollLeft -= (delta * 2);
                 });
             });
-            $('#logo').hover(function(){
+            if (window.matchMedia('only screen and (min-width: 1200px)').matches) {
+                $('#logo').hover(function(){
     $('#darkness').fadeTo(150, 1);
 }, function(){
     $('#darkness').fadeTo(150, 0, function(){
         $(this).hide();
     });
 });
+} 
         </script>
         <script src="js/tilt.jquery.js"></script>
         <script type='text/javascript' src="js/scroll.js"></script> 
