@@ -162,7 +162,7 @@
                 <div id="4" style="display: none;">
                     <iframe
                         src="https://player.vimeo.com/video/300437688?color=fc4302&title=0&byline=0&portrait=0"
-                        width="960vw%"
+                        width="600"
                     
                         frameborder="0"
                         allow="autoplay; fullscreen"
@@ -226,6 +226,17 @@
                 }
                 const loader = document.querySelector(".loader");
                 loader.className += " hidden";
+    }
+    if (window.matchMedia('only screen and (min-width: 1200px)').matches) {
+        function loadJS() {
+        // adding the script tag to the body
+       var body = document.getElementsByTagName('body')[0];
+       var script = document.createElement('script');
+       script.type = 'text/javascript';
+       script.src = 'js/tilt.jquery.js';
+       // fire the loading
+       body.appendChild(script);
+    } loadJS();
             };
             $(document).ready(function() {
             $('html, .container').mousewheel(function(e, delta) {
@@ -242,7 +253,6 @@
 });
 } 
         </script>
-        <script src="js/tilt.jquery.js"></script>
         <script type='text/javascript' src="js/scroll.js"></script> 
     </body>
 </html>
