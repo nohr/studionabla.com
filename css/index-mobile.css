@@ -91,6 +91,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    overflow-y: hidden;
 }
 .container {
     display: inline-grid;
@@ -99,7 +100,6 @@ body {
     margin: auto 0;
     width: 100%;
     height:100%;
-    overflow-y: hidden;
     touch-action: none;
 }
 .Main {
