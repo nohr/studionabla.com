@@ -164,6 +164,9 @@ p {
 #capTitle {
     white-space: nowrap;
 }
+.feed div .ball-triangle{
+    display: none;
+}
 .feed {
     width: calc(100vw - 62px);
     margin: auto;
