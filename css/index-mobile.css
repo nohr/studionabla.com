@@ -90,7 +90,7 @@ body {
 }
 .container {
     display: inline-grid;
-    grid-template-rows: 200px 2rem  230px 150px;
+    grid-template-rows: 200px 2rem  200px 150px;
     grid-gap: 0px;
     margin: auto 0;
     width: 100%;
