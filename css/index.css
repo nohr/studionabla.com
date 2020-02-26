@@ -165,12 +165,12 @@ p {
     margin: auto;
 }
 .feed img:not(.ball-triangle),.feed video, .feed iframe,.feed svg {
-    height: 50vw;
+    height: 40vw;
     border: 1px solid #fc121d;
 }
 #tidal{
-    height: 50vw;
-    width: 80vw;
+    height: 40vw;
+    width: 64vw;
 }
 [data-src] {
     width: 50px !important;
