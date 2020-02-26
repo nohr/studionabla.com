@@ -75,7 +75,7 @@ body {
     animation-timing-function: linear;
 }
 
-#loaderSVG > svg{
+#loaderSVG img{
     height: 50px;
 }
 #loaderSVG > #ball-triangle{
