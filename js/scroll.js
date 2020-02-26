@@ -192,4 +192,5 @@ function drawEdge() {
     edge.style.border = "1px solid #fc121d";
     edge.style.borderRadius = "5px 5px 5px 5px";
     document.body.appendChild(edge);
+    edge.classList.add("edge");
 }

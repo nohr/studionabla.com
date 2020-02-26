@@ -36,6 +36,7 @@ function placeText(y) {
             c3.innerHTML = "";
             c4.innerHTML = "";
             text.style.content = "0";
+            console.log("hello")
     } else {
         cap.style.display = "block";
             if (id == "1") {
