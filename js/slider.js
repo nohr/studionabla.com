@@ -3,6 +3,8 @@ function placeFeed(y) {
     if (y != "null") {
         if (x.style.display == "none") {
             x.style.display = "block";
+        } else if (y == 0){
+            x.style.display = "block" 
         } else {
             x.style.display = "none";
         }
@@ -11,7 +13,7 @@ function placeFeed(y) {
 }
 function checkFeed() {
     var i;
-    for (i = 1; i < 11; i++) {
+    for (i = 0; i < 11; i++) {
         var x = document.getElementById(i);
         if (x.style.display == "block") {
             x.style.display = "none";
@@ -36,7 +38,6 @@ function placeText(y) {
             c3.innerHTML = "";
             c4.innerHTML = "";
             text.style.content = "0";
-            console.log("hello")
     } else {
         cap.style.display = "block";
             if (id == "1") {
