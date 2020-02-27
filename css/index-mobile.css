@@ -70,11 +70,10 @@ body {
     animation-timing-function: linear;
 }
 
-#loaderSVG > svg{
-    height: 30px;
-}
-
 #loaderSVG img{
+    height: 50px;
+}
+#loaderSVG #ball-triangle{
     height: 30px;
 }
 @keyframes fadeOut{
