@@ -14,7 +14,7 @@
                      calcMode="linear"
                      repeatCount="indefinite" />
             </circle>
-            <circle cx="27" cy="5" r="5" fill="#FFDF27" stroke="#FFDF27">
+            <circle cx="27" cy="5" r="5" fill="#fc121d" stroke="#fc121d">
                 <animate attributeName="cy"
                      begin="0s" dur=".3s"
                      from="5" to="5"
@@ -28,7 +28,7 @@
                      calcMode="linear"
                      repeatCount="indefinite" />
             </circle>
-            <circle cx="49" cy="50" r="5" fill="#01DB62" stroke="#01DB62">
+            <circle cx="49" cy="50" r="5" fill="#fc121d" stroke="#fc121d">
                 <animate attributeName="cy"
                      begin="0s" dur=".3s"
                      values="50;50;5;50"
