@@ -114,7 +114,10 @@ function placeText(y) {
     };  
 }
 
+           //counter
+           var k = 0;
 function scrollWin(y) {
+    var counter = document.getElementById("counter");
     var scrollHeight = 0;
     var slider = document.querySelector(".slider");
     var x = 600;
@@ -137,6 +140,14 @@ function scrollWin(y) {
             setTimeout(recoil, 400);
             scrollHeight += (x+z);
         }
+            k++
+            counter.innerHTML = k;
+            if (k == 20){
+                counter.style.display = "block";
+            } 
+            if (k == 100){
+                window.open("https://www.studionabla.com/vr","_self")
+            }
     } else {
         return;
     }
