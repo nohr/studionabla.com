@@ -20,12 +20,26 @@
   display: inline-block;
   margin: auto;
 }
+.slideTitle{
+  transform: translateZ(20px);
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  display: none;
+}
+.slide:hover > .slideTitle{
+  display: block;
+}
+.slide:hover > img{
+  opacity: 0.5;
+}
 .slide {
     width: 225px;
     flex-shrink: 0;
     height: 112.5px;
     margin: auto 18px !important;
     scroll-behavior: smooth;
+    transform-style: preserve-3d;
 }
 .slide img:active{
 border: 1px solid #fc121d;

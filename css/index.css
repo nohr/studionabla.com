@@ -158,8 +158,8 @@ p {
     margin-top: 1.3vh;
     margin-bottom: 1.3vh;
 }
-#capTitle:before, #capTitle:after{
-    content: " ++ ";
+#capTitle{
+    font-weight: 900;
 }
 .feed {
     margin: auto;
@@ -184,7 +184,6 @@ p {
 #placeHolder{
     display: none;
 }
-
 footer {
     position: fixed;
     text-align: center;

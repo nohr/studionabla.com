@@ -23,7 +23,19 @@
 .slider {
     -ms-overflow-style: none;
 }
-
+.slideTitle{
+    transform: translateZ(20px);
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    display: none;
+}
+.slide:hover > .slideTitle{
+    display: block;
+}
+.slide:hover > img{
+    opacity: 0.5;
+}
 .slide {
     width: 225px;
     flex-shrink: 0;
@@ -31,6 +43,7 @@
     margin: 18px auto;
     scroll-behavior: smooth;
     cursor: pointer;
+    transform-style: preserve-3d;
 }
 
 .slide img:active{
@@ -59,27 +72,4 @@ box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
 .section {
   text-align: center; 
   margin-top: 8px;
-}
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
 }

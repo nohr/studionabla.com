@@ -157,10 +157,8 @@ p {
 #c4 {
     margin: 0 !important;
 }
-#capTitle:before, #capTitle:after{
-    content: " + ";
-}
-#capTitle {
+#capTitle{
+    font-weight: 900;
     white-space: nowrap;
 }
 .feed div .ball-triangle{

@@ -4,7 +4,7 @@ function placeFeed(y) {
         if (x.style.display == "none") {
             x.style.display = "block";
         } else if (y == 0){
-           x.style.display = "block" 
+           x.style.display = "block"; 
         } else {
             x.style.display = "none";
         }
@@ -16,6 +16,8 @@ function checkFeed() {
     for (i = 0; i < 11; i++) {
         var x = document.getElementById(i);
         if (x.style.display == "block") {
+            x.style.display = "none";
+        } else if (x.style.display == "inline-block") {
             x.style.display = "none";
         }
     }
@@ -142,10 +144,10 @@ function scrollWin(y) {
         }
             k++
             counter.innerHTML = k;
-            if (k == 20){
+            if (k == 10){
                 counter.style.display = "block";
             } 
-            if (k == 100){
+            if (k == 30){
                 window.open("https://www.studionabla.com/vr","_self")
             }
     } else {
