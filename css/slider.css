@@ -9,33 +9,40 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: none;
-    -webkit-user-select: none; 
+    -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
     user-select: none;
 }
+
 .slider::-webkit-scrollbar {
     width: 0px !important;
 }
+
 .slider {
     overflow: -moz-scrollbars-none;
 }
+
 .slider {
     -ms-overflow-style: none;
 }
-.slideTitle{
+
+.slideTitle {
     transform: translateZ(20px);
     position: absolute;
     top: 50%;
     margin-top: -20px;
     display: none;
 }
-.slide:hover > .slideTitle{
+
+.slide:hover>.slideTitle {
     display: block;
 }
-.slide:hover > img{
-    opacity: 0.5;
+
+.slide:hover>img {
+    opacity: 0.2;
 }
+
 .slide {
     width: 225px;
     flex-shrink: 0;
@@ -46,30 +53,33 @@
     transform-style: preserve-3d;
 }
 
-.slide img:active{
-border: 1px solid #fc121d;
-border-radius: 5px 5px 5px 5px;
+.slide img:active {
+    border: 1px solid #fc121d;
+    border-radius: 5px 5px 5px 5px;
 }
+
 .slide img {
-  width: 225px;
-  height: 112.5px;
-  border-radius: 5px 5px 5px 5px;
-  display: inline-block;
-  vertical-align: middle;
-  user-drag: none; 
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.5);
+    width: 225px;
+    height: 112.5px;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
 }
-.slide > div {
+
+.slide>div {
     scroll-snap-align: start;
 }
+
 .section {
-  text-align: center; 
-  margin-top: 8px;
+    text-align: center;
+    margin-top: 8px;
 }
