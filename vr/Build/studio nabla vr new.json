@@ -1,9 +1,9 @@
 {
 "companyName": "studio nabla",
 "productName": "Studionabla VR",
-"dataUrl": "studio nabla vr.data.unityweb",
-"wasmCodeUrl": "studio nabla vr.wasm.code.unityweb",
-"wasmFrameworkUrl": "studio nabla vr.wasm.framework.unityweb",
+"dataUrl": "studio nabla vr new.data.unityweb",
+"wasmCodeUrl": "studio nabla vr new.wasm.code.unityweb",
+"wasmFrameworkUrl": "studio nabla vr new.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
