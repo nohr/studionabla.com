@@ -152,9 +152,6 @@ body {
     z-index: 60;
 }
 
-.text-slider {
-    margin: auto;
-}
 
 .textBox {
     margin: auto;
@@ -185,7 +182,9 @@ p {
     margin-top: 1.3vh;
     margin-bottom: 1.3vh;
 }
-
+.caption{
+    align-self: self-end;
+}
 #capTitle {
     font-weight: 900;
 }

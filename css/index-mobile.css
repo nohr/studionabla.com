@@ -121,7 +121,7 @@ body {
     display: grid;
     grid-template-rows: 50% 50%;
     height: 100%;
-    margin: auto 30px;
+    margin: auto 45px;
     order: 3;
 }
 
@@ -147,10 +147,6 @@ body {
     z-index: 60;
 }
 
-.text-slider {
-    margin: auto 15px;
-}
-
 #text {
     margin: auto;
 }
@@ -169,6 +165,8 @@ p {
 .caption {
     position: relative;
     top: calc(100vw - 60vw);
+    text-align: center;
+    line-height: normal;
 }
 
 #cap {
@@ -213,7 +211,7 @@ p {
 .feed img,
 .feed video,
 .feed svg {
-    height: 40vw;
+    height: 55vw;
     border: 1px solid #fc121d;
 }
 
