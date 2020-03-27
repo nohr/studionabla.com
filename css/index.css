@@ -196,7 +196,8 @@ p {
 .feed img:not(.ball-triangle),
 .feed video,
 .feed iframe,
-.feed svg {
+.feed svg, 
+.feed #web {
     height: 40vw;
     border: 1px solid #fc121d;
 }
@@ -217,7 +218,8 @@ p {
 }
 
 #placeHolder {
-    display: none;
+    display: inline;
+    
 }
 
 footer {

@@ -13,7 +13,7 @@ function placeFeed(y) {
 
 function checkFeed() {
     var i;
-    for (i = 0; i < 11; i++) {
+    for (i = 0; i < 13; i++) {
         var x = document.getElementById(i);
         if (x.style.display == "block") {
             x.style.display = "none";
@@ -112,6 +112,20 @@ function placeText(y) {
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe & Mia Gladstone";
             c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Song Artwork";
             text.style.content = "10";
+        } else if (id == "11") {
+            text.innerHTML = text11;
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
+            c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
+            text.style.content = "11";
+        } else if (id == "12") {
+            text.innerHTML = text11;
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe";
+            c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
+            text.style.content = "12";
         }
     };
 }

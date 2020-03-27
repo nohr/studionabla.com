@@ -13,3 +13,5 @@ var text7 = "";
 var text8 = "";
 var text9 = "";
 var text10 = "";
+var text11 = "";
+var text12 = "";
