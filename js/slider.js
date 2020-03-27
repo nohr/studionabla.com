@@ -200,7 +200,9 @@ function myFunction(y) {
     doc.style.overflowY = "hidden";
 }
 
-if (window.location == "https://studionabla.com/#LysergicVisual") {
+if (window.location == "https://studionabla.com/#home") {
+    myFunction(0);
+} else if (window.location == "https://studionabla.com/#LysergicVisual") {
     myFunction(1);
 } else if (window.location == "https://studionabla.com/#PikunikuWalkCycle") {
     myFunction(2);
