@@ -23,7 +23,6 @@ function checkFeed() {
     }
 }
 
-
 function placeText(y) {
     var id = y.toString();
     var text = document.getElementById("text");
@@ -32,6 +31,7 @@ function placeText(y) {
     var c3 = document.getElementById("c3");
     var c4 = document.getElementById("c4");
     var cap = document.querySelector(".caption")
+    var main = document.querySelector(".Main");
     if (id == "0") {
         text.innerHTML = text0;
         cap.style.display = "none";
@@ -40,7 +40,14 @@ function placeText(y) {
         c3.innerHTML = "";
         c4.innerHTML = "";
         text.style.content = "0";
+        mouseOut = false;
+        main.style.display = "block";
+        checkFeed();
+        var feed = document.getElementById(y);
+        feed.style.display = "inline-block";
     } else {
+        mouseOut = true;
+        main.style.display = "block";
         cap.style.display = "block";
         if (id == "1") {
             text.innerHTML = text1;
@@ -180,10 +187,13 @@ function hideSlide(y) {
     }
 }
 
+
 function myFunction(y) {
-    checkFeed();
-    placeFeed(y);
+
     placeText(y);
     scrollWin(y);
-    hideSlide(y)
+    hideSlide(y);
+
+    var feed = document.getElementById(y);
+    feed.style.opacity = 1; 
 }

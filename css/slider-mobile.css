@@ -15,8 +15,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  order: 4;
 }
-
 .slide:nth-child(n + 1),
 .section:nth-child(n + 1) {
   display: inline-block;

@@ -119,7 +119,6 @@ body {
     grid-gap: 50px;
     margin: auto 0;
     height: 100%;
-    overflow-x: auto;
     touch-action: none;
 }
 
@@ -136,7 +135,7 @@ body {
 
 #nabla-logo #logo {
     height: 30px;
-    position: absolute;
+    position: fixed;
     left: 79px;
     z-index: 90;
     cursor: pointer;
@@ -182,9 +181,11 @@ p {
     margin-top: 1.3vh;
     margin-bottom: 1.3vh;
 }
-.caption{
+
+.caption {
     align-self: self-end;
 }
+
 #capTitle {
     font-weight: 900;
 }
@@ -196,7 +197,7 @@ p {
 .feed img:not(.ball-triangle),
 .feed video,
 .feed iframe,
-.feed svg, 
+.feed svg,
 .feed #web {
     height: 40vw;
     border: 1px solid #fc121d;
@@ -219,7 +220,7 @@ p {
 
 #placeHolder {
     display: inline;
-    
+
 }
 
 footer {

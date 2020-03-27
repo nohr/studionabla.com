@@ -27,6 +27,42 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/text.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+        var mouseOut = false;
+
+        function showMenu(y) {
+            var mouseOut = false;
+            var i;
+            for (i = 0; i < 13; i++) {
+                var x = document.getElementById(i);
+                if (x.style.display == "inline-block") {
+                    x.style.display = "none";
+                } else if (x.style.display == "inline-block") {
+                    x.style.display = "none";
+                }
+            };
+            var feed = document.getElementById(y);
+            var main = document.querySelector(".Main");
+            var doc = document.querySelector("html");
+            feed.style.display = "inline-block";
+            feed.style.opacity = 0.2;
+            main.style.display = "none";
+            doc.style.overflowX = "hidden";
+        };
+
+        function hideMenu(y) {
+            if (mouseOut == false) {
+                var feed = document.getElementById(y);
+                feed.style.display = "none";
+                var feed = document.getElementById(y - y);
+                feed.style.display = "inline-block";
+                var main = document.querySelector(".Main");
+                var doc = document.querySelector("html");
+                main.style.display = "block";
+                doc.style.overflowX = "scroll";
+            };
+        };
+    </script>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon/favicon2x.png" />
     <link rel="mask-icon" href="img/favicon/favicon.svg" />
 </head>
@@ -84,77 +120,80 @@
                 <div class="section">
                     <p> 3D Graphics </p>
                 </div>
-                <div class="slide" onclick="myFunction(1)" data-tilt>
+                <div class="slide" onmouseover="showMenu(1)" onmouseout="hideMenu(1)" onclick="myFunction(1)" data-tilt>
                     <p class="slideTitle"><i>Lysergic</i> Visual</p>
                     <img data-src="img/slide/slide-01.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(2)" data-tilt>
+                <div class="slide" onmouseover="showMenu(2)" onmouseout="hideMenu(2)" onclick="myFunction(2)" data-tilt>
                     <p class="slideTitle"><i>Pikuniku</i> Walk Cycle</p>
                     <img data-src="img/slide/slide-02.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(3)" data-tilt>
+                <div class="slide" onmouseover="showMenu(3)" onmouseout="hideMenu(3)" onclick="myFunction(3)" data-tilt>
                     <p class="slideTitle">cyberShades</p>
                     <img data-src="img/slide/slide-03.jpg" />
                 </div>
                 <div class="section">
                     <p> Audio Work </p>
                 </div>
-                <div class="slide" onclick="myFunction(4)" data-tilt>
+                <div class="slide" onmouseover="showMenu(4)" onmouseout="hideMenu(4)" onclick="myFunction(4)" data-tilt>
                     <p class="slideTitle">TIDAL X: 10/15</p>
                     <img data-src="img/slide/slide-04.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(5)" data-tilt>
+                <div class="slide" onmouseover="showMenu(5)" onmouseout="hideMenu(5)" onclick="myFunction(5)" data-tilt>
                     <p class="slideTitle"><i>Four Years Later</i></p>
                     <img data-src="img/slide/slide-05.jpg" />
                 </div>
                 <div class="section">
                     <p> Web Development </p>
                 </div>
-                <div class="slide" onclick="myFunction(6)" data-tilt>
+                <div class="slide" onmouseover="showMenu(6)" onmouseout="hideMenu(6)" onclick="myFunction(6)" data-tilt>
                     <p class="slideTitle">nohri.net</p>
                     <img data-src="img/slide/slide-06.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(11)" data-tilt>
+                <div class="slide" onmouseover="showMenu(11)" onmouseout="hideMenu(11)" onclick="myFunction(11)"
+                    data-tilt>
                     <p class="slideTitle">nohri.xyz</p>
                     <img data-src="img/slide/slide-11.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(12)" data-tilt>
+                <div class="slide" onmouseover="showMenu(12)" onmouseout="hideMenu(12)" onclick="myFunction(12)"
+                    data-tilt>
                     <p class="slideTitle">aite.dev</p>
                     <img data-src="img/slide/slide-12.jpg" />
                 </div>
                 <div class="section">
                     <p> 2D Graphics </p>
                 </div>
-                <div class="slide" onclick="myFunction(7)" data-tilt>
+                <div class="slide" onmouseover="showMenu(7)" onmouseout="hideMenu(7)" onclick="myFunction(7)" data-tilt>
                     <p class="slideTitle">Heat.wav</p>
                     <img data-src="img/slide/slide-07.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(8)" data-tilt>
+                <div class="slide" onmouseover="showMenu(8)" onmouseout="hideMenu(8)" onclick="myFunction(8)" data-tilt>
                     <p class="slideTitle">NXGN</p>
                     <img data-src="img/slide/slide-08.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(9)" data-tilt>
+                <div class="slide" onmouseover="showMenu(9)" onmouseout="hideMenu(9)" onclick="myFunction(9)" data-tilt>
                     <p class="slideTitle"><i>Realms</i></p>
                     <img data-src="img/slide/slide-09.jpg" />
                 </div>
-                <div class="slide" onclick="myFunction(10)" data-tilt>
+                <div class="slide" onmouseover="showMenu(10)" onmouseout="hideMenu(10)" onclick="myFunction(10)"
+                    data-tilt>
                     <p class="slideTitle"><i>Revolutionize</i></p>
                     <img data-src="img/slide/slide-10.jpg" />
                 </div>
             </div>
             <!-- MAIN -->
             <div class="Main">
-                    <!-- TEXTBOX -->
-                    <div class="textBox">
-                        <p id="text"></p>
-                    </div>
-                    <!-- CAPTION -->
-                    <div class="caption">
-                        <div id="cap" style="display: inline-grid;">
-                            <div id="c1" style="margin-top: 0;"></div>
-                            <div id="c2"></div>
-                            <div id="c3"></div>
-                            <div id="c4" style="margin-bottom: 0;"></div>
+                <!-- TEXTBOX -->
+                <div class="textBox">
+                    <p id="text"></p>
+                </div>
+                <!-- CAPTION -->
+                <div class="caption">
+                    <div id="cap" style="display: inline-grid;">
+                        <div id="c1" style="margin-top: 0;"></div>
+                        <div id="c2"></div>
+                        <div id="c3"></div>
+                        <div id="c4" style="margin-bottom: 0;"></div>
                     </div>
                 </div>
             </div>
@@ -218,11 +257,13 @@
                     <img data-src="slider/10b.jpg" />
                 </div>
                 <div id="11" style="display: none;">
-                    <iframe id="web" data-src="https://nohri.net/nohri.xyz/" style="margin-right: 15px;" width="545"></iframe>
+                    <iframe id="web" data-src="https://nohri.net/nohri.xyz/" style="margin-right: 15px;"
+                        width="545"></iframe>
                     <p id="placeHolder"> visit <a href='https://nohri.net/nohri.xyz/'>nohri.xyz</a></p>
                 </div>
                 <div id="12" style="display: none;">
-                    <iframe id="web" data-src="https://nohr.github.io/Aite.dev/" style="margin-right: 15px;" width="545"></iframe>
+                    <iframe id="web" data-src="https://nohr.github.io/Aite.dev/" style="margin-right: 15px;"
+                        width="545"></iframe>
                     <p id="placeHolder"> visit <a href='https://nohr.github.io/Aite.dev/'>aite.dev</a></p>
                 </div>
             </div>
