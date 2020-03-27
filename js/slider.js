@@ -199,31 +199,3 @@ function myFunction(y) {
     doc.style.overflowX = "unset";
     doc.style.overflowY = "hidden";
 }
-
-if (window.location == `${window.location.href}#home`) {
-    myFunction(0);
-} else if (window.location == `${window.location.href}#LysergicVisual`) {
-    myFunction(1);
-} else if (window.location == `${window.location.href}#PikunikuWalkCycle`) {
-    myFunction(2);
-} else if (window.location == `${window.location.href}#cyberShades`) {
-    myFunction(3);
-} else if (window.location == `${window.location.href}#TidalX1015`) {
-    myFunction(4);
-} else if (window.location == `${window.location.href}#FourYearsLater`) {
-    myFunction(5);
-} else if (window.location == `${window.location.href}#nohri.net`) {
-    myFunction(6);
-} else if (window.location == `${window.location.href}#Heat.wav`) {
-    myFunction(7);
-} else if (window.location == `${window.location.href}#NXGN`) {
-    myFunction(8);
-} else if (window.location == `${window.location.href}#Realms`) {
-    myFunction(9);
-} else if (window.location == `${window.location.href}#Revolutionize`) {
-    myFunction(10);
-} else if (window.location == `${window.location.href}#nohri.xyz`) {
-    myFunction(11);
-} else if (window.location == `${window.location.href}#aite.dev`) {
-    myFunction(12);
-}
