@@ -43,7 +43,7 @@
             };
             var feed = document.getElementById(y);
             var main = document.querySelector(".Main");
-            var doc = document.querySelector("html");
+            var doc = document.querySelector(".bigContainer");
             feed.style.display = "inline-block";
             feed.style.opacity = 0.2;
             main.style.display = "none";
@@ -57,9 +57,9 @@
                 var feed = document.getElementById(y - y);
                 feed.style.display = "inline-block";
                 var main = document.querySelector(".Main");
-                var doc = document.querySelector("html");
+                var doc = document.querySelector(".bigContainer");
                 main.style.display = "block";
-                doc.style.overflowX = "scroll";
+                doc.style.overflowX = "unset";
             };
         };
     </script>

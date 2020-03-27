@@ -195,5 +195,7 @@ function myFunction(y) {
     hideSlide(y);
 
     var feed = document.getElementById(y);
-    feed.style.opacity = 1; 
+    feed.style.opacity = 1;
+    var doc = document.querySelector(".bigContainer");
+    doc.style.overflowX = "unset";
 }
