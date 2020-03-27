@@ -144,7 +144,7 @@ body {
 #darkness {
     display: none;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -157,7 +157,7 @@ body {
 }
 
 a {
-    color: #fc121d;
+    color: #f91a2a;
     text-decoration: none;
 }
 
@@ -200,7 +200,11 @@ p {
 .feed svg,
 .feed #web {
     height: 40vw;
-    border: 1px solid #fc121d;
+    border: 1px solid #f91a2a;
+    margin: 0 15px;
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 #tidal {

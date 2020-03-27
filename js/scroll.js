@@ -38,9 +38,9 @@ function handleMousemove( event ) {
     // calculate the boundaries of the edge in the viewport (these coordinates
     // are relative to the viewport grid system).
     var edgeTop = edgeSize;
-    var edgeLeft = edgeSize;
+    var edgeLeft = edgeSize + 80;
     var edgeBottom = ( viewportHeight - edgeSize );
-    var edgeRight = ( viewportWidth - edgeSize );
+    var edgeRight = ( viewportWidth - edgeSize ) - 81;
 
     var isInLeftEdge = ( viewportX < edgeLeft );
     var isInRightEdge = ( viewportX > edgeRight );
@@ -189,7 +189,7 @@ function drawEdge() {
     edge.style.bottom = edgeSize + "px";
     edge.style.left = edgeSize + 80 + "px";
     edge.style.right =  edgeSize + 81 + "px";
-    edge.style.border = "1px solid #fc121d";
+    edge.style.border = "1px solid #f91a2a";
     edge.style.borderRadius = "5px 5px 5px 5px";
     document.body.appendChild(edge);
     edge.classList.add("edge");

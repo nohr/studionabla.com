@@ -152,7 +152,7 @@ body {
 }
 
 a {
-    color: #fc121d;
+    color: #f91a2a;
     text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ margin: 1% 0;
 .feed video,
 .feed svg {
     height: 55vw;
-    border: 1px solid #fc121d;
+    border: 1px solid #f91a2a;
 }
 
 [data-src] {
