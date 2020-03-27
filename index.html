@@ -48,6 +48,10 @@
             feed.style.opacity = 0.2;
             main.style.display = "none";
             doc.style.overflowX = "hidden";
+            const tilt = $('.js-tilt').tilt()
+            tilt.on('change', function (e, transforms) {
+                document.getElementById(y)
+            });
         };
 
         function hideMenu(y) {
@@ -397,7 +401,7 @@
         }
     </script>
     <script>
-        window.onbeforeunload = function (e) {
+        window.addEventListener('hashchange', function() {
             if (window.location == `${window.location.href}#home`) {
                 myFunction(0);
             } else if (window.location == `${window.location.href}#LysergicVisual`) {
@@ -425,7 +429,7 @@
             } else if (window.location == `${window.location.href}#aite.dev`) {
                 myFunction(12);
             }
-        }
+        });
     </script>
     <!-- <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
         <script>
