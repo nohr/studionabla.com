@@ -193,9 +193,35 @@ function myFunction(y) {
     placeText(y);
     scrollWin(y);
     hideSlide(y);
-
     var feed = document.getElementById(y);
     feed.style.opacity = 1;
     var doc = document.querySelector(".bigContainer");
     doc.style.overflowX = "unset";
+    doc.style.overflowY = "hidden";
+}
+
+if (window.location == "https://studionabla.com/#LysergicVisual") {
+    myFunction(1);
+} else if (window.location == "https://studionabla.com/#PikunikuWalkCycle") {
+    myFunction(2);
+} else if (window.location == "https://studionabla.com/#cyberShades") {
+    myFunction(3);
+} else if (window.location == "https://studionabla.com/#TidalX1015") {
+    myFunction(4);
+} else if (window.location == "https://studionabla.com/#FourYearsLater") {
+    myFunction(5);
+} else if (window.location == "https://studionabla.com/#nohri.net") {
+    myFunction(6);
+} else if (window.location == "https://studionabla.com/#Heat.wav") {
+    myFunction(7);
+} else if (window.location == "https://studionabla.com/#NXGN") {
+    myFunction(8);
+} else if (window.location == "https://studionabla.com/#Realms") {
+    myFunction(9);
+} else if (window.location == "https://studionabla.com/#Revolutionize") {
+    myFunction(10);
+} else if (window.location == "https://studionabla.com/#nohri.xyz") {
+    myFunction(11);
+} else if (window.location == "https://studionabla.com/#aite.dev") {
+    myFunction(12);
 }
