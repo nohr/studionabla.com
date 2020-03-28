@@ -137,11 +137,7 @@ function placeText(y) {
     };
 }
 
-//counter
-var k = 0;
-
 function scrollWin(y) {
-    var counter = document.getElementById("counter");
     var scrollHeight = 0;
     var slider = document.querySelector(".slider");
     var x = 600;
@@ -165,14 +161,6 @@ function scrollWin(y) {
             setTimeout(recoil, 400);
             scrollHeight += (x + z);
         }
-        k++
-        counter.innerHTML = k;
-        if (k == 10) {
-            counter.style.display = "block";
-        }
-        if (k == 30) {
-            window.open("https://www.studionabla.com/vr", "_self")
-        }
     } else {
         return;
     }
@@ -189,14 +177,16 @@ function hideSlide(y) {
 
 
 function myFunction(y) {
-
+    if (y != 0){
+        var feed = document.getElementById(0);
+        feed.style.display = "none";
+    };
     placeText(y);
     scrollWin(y);
     hideSlide(y);
     var feed = document.getElementById(y);
+    feed.style.display = "inline-block";
     feed.style.opacity = 1;
     var doc = document.querySelector(".bigContainer");
     doc.style.overflowX = "unset";
-    doc.style.overflowY = "scroll";
 }
-
