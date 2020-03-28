@@ -197,6 +197,6 @@ function myFunction(y) {
     feed.style.opacity = 1;
     var doc = document.querySelector(".bigContainer");
     doc.style.overflowX = "unset";
-    doc.style.overflowY = "hidden";
+    doc.style.overflowY = "scroll";
 }
 
