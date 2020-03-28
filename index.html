@@ -402,13 +402,15 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Handler when the DOM is fully loaded
+            var x = "https://studionabla.com/"; 
             //var x = "http://127.0.0.1:5500/index.html"; 
-            var x = "https://studionabla.com/";
-        
-            if (window.location == x || x + "#") {
+            if (window.location == x) {
+                myFunction(0);
+            } else if (window.location == x + "#") {
                 myFunction(0);
             } else if (window.location == x + `#LysergicVisual`) {
                 myFunction(1);
+                console.log(x)
             } else if (window.location == x + `#PikunikuWalkCycle`) {
                 myFunction(2);
             } else if (window.location == x + `#cyberShades`) {
@@ -432,7 +434,7 @@
             } else if (window.location == x + `#aite.dev`) {
                 myFunction(12);
             }
-        });
+        })
         //VR counter and clicker
         var counter = document.getElementById("counter");
         var k = 0;
