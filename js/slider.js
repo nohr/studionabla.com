@@ -137,35 +137,6 @@ function placeText(y) {
     };
 }
 
-function scrollWin(y) {
-    var scrollHeight = 0;
-    var slider = document.querySelector(".slider");
-    var x = 600;
-    var z = 50;
-    var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-    x = x * plusOrMinus;
-    z = z * plusOrMinus;
-
-    function recoil() {
-        slider.scrollBy({
-            top: z,
-            behavior: "smooth"
-        });
-    };
-    if (y.toString() == "0") {
-        if (scrollHeight >= 0) {
-            slider.scrollBy({
-                top: x,
-                behavior: "smooth"
-            });
-            setTimeout(recoil, 400);
-            scrollHeight += (x + z);
-        }
-    } else {
-        return;
-    }
-}
-
 function hideSlide(y) {
     var slider = document.querySelector(".slider");
     if (y != 0) {
@@ -175,14 +146,12 @@ function hideSlide(y) {
     }
 }
 
-
 function myFunction(y) {
     if (y != 0){
         var feed = document.getElementById(0);
         feed.style.display = "none";
     };
     placeText(y);
-    scrollWin(y);
     hideSlide(y);
     var feed = document.getElementById(y);
     feed.style.display = "inline-block";
