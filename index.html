@@ -401,7 +401,7 @@
         }
     </script>
     <script>
-        window.onbeforeunload = function(event) {
+        window.onload = function() {
         window.addEventListener('hashchange', function() {
             if (window.location == `https://studionabla.com/#home`) {
                 myFunction(0);
