@@ -402,8 +402,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Handler when the DOM is fully loaded
-            var x = "https://studionabla.com/"; //http://127.0.0.1:5500/index.html"; 
-            if (window.location == x + `#`) {
+            var x = document.URL; 
+        
+            if (window.location == x + `#`||x) {
                 myFunction(0);
             } else if (window.location == x + `#LysergicVisual`) {
                 myFunction(1);
