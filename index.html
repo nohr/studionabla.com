@@ -414,7 +414,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             // Handler when the DOM is fully loaded
             var x = "https://studionabla.com/"; 
-            //var x = "http://127.0.0.1:5500/index.html";
+            //var x = "http://127.0.0.1:5500/";
             if (window.location == x) {
                 myFunction(0);
             } else if (window.location == x + "#") {
@@ -478,15 +478,15 @@
         }
 
         function home(y) {
-            if (y == 0) {
-                k++
+            if (y == 0 && k <= 29) {
+                
                 counter.innerHTML = k;
                 if (k == 10) {
                     counter.style.display = "block";
                 } else if (k >= 20) {
                     scrollWin();
                 } else if (k == 30) {
-                    window.open("https://www.studionabla.com/vr", "_self")
+                    window.open(document.URL + "/vr", "_blank")
                 }
             };
             placeText(y);
