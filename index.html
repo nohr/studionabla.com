@@ -123,12 +123,19 @@
             <div id="darkness"></div>
             <!-- SLIDER -->
             <div class="slider">
+                <!-- <a href="#staysafe">
+                    <div class="slide" onmouseover="showMenu(13)" onmouseout="hideMenu(13)" onclick="home(13)"
+                        id="staysafe" data-tilt>
+                        <p class="slideTitle">stay safe</p>
+                        <img data-src="img/slide/slide-13.png" />
+                    </div>
+                </a> -->
                 <div class="section">
                     <p> 3D Graphics </p>
                 </div>
                 <a href="#LysergicVisual">
                     <div class="slide" onmouseover="showMenu(1)" onmouseout="hideMenu(1)" onclick="home(1)"
-                        d="LysergicVisual" data-tilt>
+                        id="LysergicVisual" data-tilt>
                         <p class="slideTitle"><i>Lysergic</i> Visual</p>
                         <img data-src="img/slide/slide-01.jpg" />
                     </div>
@@ -305,6 +312,12 @@
                         width="545"></iframe>
                     <p id="placeHolder"> visit <a href='https://nohr.github.io/Aite.dev/'>aite.dev</a></p>
                 </div>
+                <div id="13" style="display: none;">
+                    <div class="x13"></div>
+                    <div class="x13a"></div>
+                    <div class="x13b"></div>
+                    <div class="x13c"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -413,11 +426,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Handler when the DOM is fully loaded
-            var x = "https://studionabla.com/"; 
-            //var x = "http://127.0.0.1:5500/";
+            //var x = "https://studionabla.com/"; 
+            var x = "http://127.0.0.1:5500/";
             if (window.location == x) {
-                myFunction(0);
-            } else if (window.location == x + "#") {
                 myFunction(0);
             } else if (window.location == x + `#LysergicVisual`) {
                 myFunction(1);
@@ -444,6 +455,10 @@
                 myFunction(11);
             } else if (window.location == x + `#aite.dev`) {
                 myFunction(12);
+            } else if (window.location == x + `#staysafe`) {
+                myFunction(13);
+            } else {
+                myFunction(0);
             }
         })
         //VR counter and clicker

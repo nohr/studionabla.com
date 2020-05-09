@@ -13,7 +13,7 @@ function placeFeed(y) {
 
 function checkFeed() {
     var i;
-    for (i = 0; i < 13; i++) {
+    for (i = 0; i < 14; i++) {
         var x = document.getElementById(i);
         if (x.style.display == "block") {
             x.style.display = "none";
@@ -127,12 +127,19 @@ function placeText(y) {
             c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
             text.style.content = "11";
         } else if (id == "12") {
-            text.innerHTML = text11;
+            text.innerHTML = text12;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
             text.style.content = "12";
+        } else if (id == "13") {
+            text.innerHTML = text13;
+            c1.innerHTML = "<span id ='capTitle'>scroll</span> <br> down";
+            c2.innerHTML = "<span id ='capTitle'></span>";
+            c3.innerHTML = "";
+            c4.innerHTML = "<span id ='capTitle'>stay</span> <br> safe";
+            text.style.content = "13";
         }
     };
 }
@@ -158,4 +165,5 @@ function myFunction(y) {
     feed.style.opacity = 1;
     var doc = document.querySelector(".bigContainer");
     doc.style.overflowX = "unset";
+    console.log(y);
 }

@@ -5,28 +5,16 @@
 @media screen and (orientation:landscape) {
     /* CSS applied when the device is in landscape mode */
 }
-html {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 @media (prefers-color-scheme: dark) {
     html {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(21, 21, 21);
         color: rgb(255, 255, 255);
         content: "dark";
     }
 
     .loader {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(21, 21, 21);
     }
 }
 
@@ -41,7 +29,15 @@ html {
         background-color: rgb(255, 255, 255);
     }
 }
+html {
+    overflow: hidden;
+    width: 100%;
+}
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -83,7 +79,7 @@ body {
 
 .loader.hidden {
     z-index: -100;
-    animation: fadeOut .3s;
+    animation: fadeOut .1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -93,7 +89,7 @@ body {
 }
 
 #loaderSVG #ball-triangle {
-    height: 30px;
+    height: 50px;
 }
 
 @keyframes fadeOut {
@@ -111,50 +107,47 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll!important;
 }
 
 .container {
-    display: inline-grid;
-    grid-template-rows: 200px calc(100vh - 800px) calc(100vh - 1198px) calc(100vh);
-    grid-gap: 0px;
+    display: inline-block;
+    grid-template-rows:30% 30% 25% 5%;
+    grid-gap: 10px;
     margin: auto 0;
     width: 100%;
-    height: 100%;
-    touch-action: none;
 }
 
 .Main {
+    width: calc(100vw - 140px);
     display: grid;
     grid-template-rows: 50% 50%;
-    height: 100%;
-    margin: auto 45px;
-    order: 2;
+    margin: 40px auto;
+    order: 1;
+    font-size: smaller;
+    line-height: 2.5em;
 }
 
 #nabla-logo {
     display: block;
-    margin: auto;
     order: 1;
+    width: 90px;
 }
 
 #nabla-logo #logo {
-    height: 30px;
+    width: 90px;
+    position: relative;
+    left: 0px;
     z-index: 90;
     cursor: pointer;
+    margin: calc(30% - 0px) 0px;
 }
 
 #darkness {
     display: none;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 60;
 }
-
-#text {
+.textBox {
     margin: auto;
 }
 
@@ -169,56 +162,56 @@ p {
     text-transform: lowercase;
 }
 
-.caption {
-margin: 1% 0;
-    text-align: center;
-    line-height: normal;
-}
-
 #cap {
     text-transform: lowercase;
-    display: flex;
-    grid-template-columns: .9fr .9fr 1fr 1.2fr;
+    margin-left: 30px;
+    display: flex !important;
+    grid-template-rows: .5fr .5fr .75fr 1fr;
 }
 
 #c1,
 #c2,
 #c3,
 #c4 {
-    margin: 0 !important;
+    margin: 1.3vh!important;
+}
+
+.caption {
+    align-self: self-end;
 }
 
 #capTitle {
     font-weight: 900;
-    white-space: nowrap;
-}
-
-.feed div .ball-triangle {
-    display: none;
+    border-bottom: 1px dotted #f91a2a;
 }
 
 .feed {
-    width: calc(100vw - 62px);
     margin: auto;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: none;
     order: 3;
+    overflow-x: scroll;
 }
-
-.feed:nth-child(n + 1) {
-    margin-top: 5px;
-    vertical-align: middle;
-    display: inline-block;
+.feed img.ball-triangle{
+display: none;
 }
-
-.feed img,
+.feed img:not(.ball-triangle),
 .feed video,
-.feed svg {
-    height: 55vw;
-    border: 1px solid #f91a2a;
+.feed iframe,
+.feed svg,
+.feed #web {
+    height: 80vw;
+    border: 1px dotted #f91a2a;
+    margin: 0 15px;
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.feed iframe:not(#tidal){
+display: none;
+}
+#tidal {
+    height: 80vw;
+    width: 128vw;
 }
 
 [data-src] {
@@ -226,42 +219,14 @@ margin: 1% 0;
     height: 50px !important;
 }
 
-.feed p {
-    margin: auto 30px;
-    height: 40vw;
-    white-space: pre-wrap;
-    overflow-y: scroll;
-    line-height: normal;
-    display: inline-block;
+.feed:nth-child(n + 1) {
     vertical-align: middle;
+    white-space: nowrap;
 }
 
-#tidal {
-    height: 47vw;
-    width: 84vw;
-}
-
-@media screen and (min-width: 701px) {
-    #web {
-        height: 40vw;
-        width: 60vw;
-    }
-
-    #placeholder {
-        display: none;
-        line-height: 20vw;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    #web {
-        display: none;
-    }
-
-    #placeholder {
-        display: inline-block;
-        line-height: 20vw;
-    }
+#placeHolder {
+    display: inline;
+    margin: 0 15px;
 }
 
 footer {
@@ -269,15 +234,16 @@ footer {
     text-align: center;
     vertical-align: middle;
     z-index: 100 !important;
-    line-height: 2;
+    line-height: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: 1.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .edge {
-    top: 200px;
-    bottom: 200px;
-    left: 30px !important;
-    right: 30px !important;
+    display: none;
 }
