@@ -37,7 +37,7 @@
 .slide {
   width: 50vw;
   flex-shrink: 0;
-  margin:18px auto  !important;
+  margin: 18px auto !important;
   scroll-behavior: smooth;
   transform-style: preserve-3d;
 }
