@@ -68,8 +68,7 @@
 .section {
   width: 220px;
   text-align: center;
-  vertical-align: middle;
-  margin-top: 8px;
+  margin: 0 auto;
   -webkit-user-select: none;
   /* Safari */
   -moz-user-select: none;
