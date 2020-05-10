@@ -155,6 +155,16 @@
                     </div>
                 </a>
                 <div class="section">
+                    <p> Type Design </p>
+                </div>
+                <a href="#Cala">
+                    <div class="slide" onmouseover="showMenu(14)" onmouseout="hideMenu(14)" onclick="home(14)" id="cala"
+                        data-tilt>
+                        <p class="slideTitle">cala</p>
+                        <img data-src="img/slide/slide-14.jpg" />
+                    </div>
+                </a>
+                <div class="section">
                     <p> Audio Work </p>
                 </div>
                 <a href="#TidalX1015">
@@ -263,11 +273,14 @@
                     <img data-src="slider/2c.jpeg" />
                 </div>
                 <div id="3" style="display: none;">
-                    <img data-src="slider/3a.jpg" />
-                    <img data-src="slider/3b.jpg" />
                     <video autoplay controls loop>
                         <source src="slider/3c.MOV" type="video/mp4" />
                     </video>
+                    <a href="https://instagram.com/a/r/?effect_id=498584427742332"><img
+                            style=" transform: scale(.5, .5);" data-src="slider/3e.png" />
+                    </a>
+                    <img data-src="slider/3a.jpg" />
+                    <img data-src="slider/3b.jpg" />
                     <img data-src="slider/3d.jpg" />
                 </div>
                 <div id="4" style="display: none;">
@@ -276,6 +289,8 @@
                         width="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <div id="5" style="display: none;">
+                    <p class="WIP">! This is a work in progress/Samples are available upon requests to <a
+                            href="mailto:info@studionabla.com">info@studionabla.com</a>.</p>
                     <img data-src="slider/5a.jpeg" />
                     <img data-src="slider/5b.JPG" />
                 </div>
@@ -314,9 +329,13 @@
                 </div>
                 <div id="13" style="display: none;">
                     <div class="x13"></div>
-                    <div class="x13a"></div>
-                    <div class="x13b"></div>
-                    <div class="x13c"></div>
+                </div>
+                <div id="14" style="display: none;">
+                    <p class="WIP">! This is a work in progress</p>
+                    <img data-src="slider/14a.png" style="margin-left: 15px;" />
+                    <img data-src="slider/14b.png" style="margin-left: 15px;" />
+                    <img data-src="slider/14c.png" style="margin-left: 15px;" />
+                    <img data-src="slider/14d.jpg" style="margin-left: 15px;" />
                 </div>
             </div>
         </div>
@@ -426,13 +445,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Handler when the DOM is fully loaded
-            var x = "https://studionabla.com/";
-            //var x = "http://127.0.0.1:5500/";
+            //var x = "https://studionabla.com/";
+            var x = "http://127.0.0.1:5500/";
+            //var x = "192.168.15:5500/";
             if (window.location == x) {
                 myFunction(0);
             } else if (window.location == x + `#LysergicVisual`) {
                 myFunction(1);
-                console.log(x)
             } else if (window.location == x + `#PikunikuWalkCycle`) {
                 myFunction(2);
             } else if (window.location == x + `#cyberShades`) {
@@ -457,6 +476,8 @@
                 myFunction(12);
             } else if (window.location == x + `#staysafe`) {
                 myFunction(13);
+            } else if (window.location == x + `#Cala`) {
+                myFunction(14);
             } else {
                 myFunction(0);
             }

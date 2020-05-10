@@ -13,7 +13,7 @@ function placeFeed(y) {
 
 function checkFeed() {
     var i;
-    for (i = 0; i < 14; i++) {
+    for (i = 0; i < 15; i++) {
         var x = document.getElementById(i);
         if (x.style.display == "block") {
             x.style.display = "none";
@@ -54,84 +54,84 @@ function placeText(y) {
             c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
             c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Animation & Wordmark Design";
+            c4.innerHTML = "<span id ='capTitle'>Media</span><br> 3D Animation & Wordmark Design";
             text.style.content = "1";
         } else if (id == "2") {
             text.innerHTML = text2;
             c1.innerHTML = "";
             c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
             c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span><br> 3D Modelling & Animation";
+            c4.innerHTML = "<span id ='capTitle'>Media</span><br> 3D Modelling & Animation";
             text.style.content = "2";
         } else if (id == "3") {
             text.innerHTML = text3;
-            c1.innerHTML = "";
+            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> cyberShades";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span><br>   3D Modelling & Instagram Filter Creation";
+            c4.innerHTML = "<span id ='capTitle'>Media</span><br> 3D Modelling & Instagram Filter Creation";
             text.style.content = "3";
         } else if (id == "4") {
             text.innerHTML = text4;
             c1.innerHTML = "<span id ='capTitle'>Client</span><br> Tidal";
             c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
-            c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe & MeLo-X";
-            c4.innerHTML = "<span id ='capTitle'>Services</span><br>  Sound Design";
+            c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe (implementation) & MeLo-X (direction)";
+            c4.innerHTML = "<span id ='capTitle'>Media</span><br>  Sound Design";
             text.style.content = "4";
         } else if (id == "5") {
             text.innerHTML = text5;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br> Celine Clarke";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
-            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Sound Recording, Sound Design & Score";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (direction & implementaion) & Celine Clarke (direction)";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Sound Recording, Sound Design & Score";
             text.style.content = "5";
         } else if (id == "6") {
             text.innerHTML = text6;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development & EP Artwork";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development & EP Artwork";
             text.style.content = "6";
         } else if (id == "7") {
             text.innerHTML = text7;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Heat.wav";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2017";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Wordmark Design";
             text.style.content = "7";
         } else if (id == "8") {
             text.innerHTML = text8;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  NXGN";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2016";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Wordmark Design & Song Artwork";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Wordmark Design & Song Artwork";
             text.style.content = "8";
         } else if (id == "9") {
             text.innerHTML = text9;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe & Jheyda McGarrell & Kyle Castro";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br> Album Artwork";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (direction & implementaion), Jheyda McGarrell (photography) & Kyle Castro (illustration)";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Album Artwork";
             text.style.content = "9";
         } else if (id == "10") {
             text.innerHTML = text10;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Mia Gladstone";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe & Mia Gladstone";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Song Artwork";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (implementaion) & Mia Gladstone (direction)";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Song Artwork";
             text.style.content = "10";
         } else if (id == "11") {
             text.innerHTML = text11;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
             text.style.content = "11";
         } else if (id == "12") {
             text.innerHTML = text12;
             c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Services</span> <br>  Web Development";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
             text.style.content = "12";
         } else if (id == "13") {
             text.innerHTML = text13;
@@ -140,6 +140,13 @@ function placeText(y) {
             c3.innerHTML = "";
             c4.innerHTML = "<span id ='capTitle'>stay</span> <br> safe";
             text.style.content = "13";
+        } else if (id == "14") {
+            text.innerHTML = text14;
+            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> cala";
+            c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
+            c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
+            c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Type Design";
+            text.style.content = "14";
         }
     };
 }

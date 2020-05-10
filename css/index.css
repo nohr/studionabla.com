@@ -226,6 +226,10 @@ p {
     display: inline;
 
 }
+.WIP{
+    margin-left: 15px;
+}
+
 .feed .x13{
     height: 45vw;
     margin: 0 15px;
