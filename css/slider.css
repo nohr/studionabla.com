@@ -3,8 +3,6 @@
     bottom: 200px;
     height: calc(100vh - 402px);
     position: fixed;
-    border-top: 1px dotted #f91a2a;
-    border-bottom: 1px dotted #f91a2a;
     right: 281px;
     z-index: 50;
     width: 300px;
