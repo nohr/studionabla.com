@@ -113,6 +113,7 @@ body {
 
 .CD {
     margin-left: 36vw;
+    cursor: progress;
 }
 .bigContainer {
     display: flex;
