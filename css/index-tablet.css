@@ -92,7 +92,7 @@ body {
     height: 50px;
 }
 
-#loaderSVG #ball-triangle {
+#loaderSVG #CD {
     height: 50px;
 }
 
@@ -194,7 +194,7 @@ p {
     margin: auto;
 }
 
-.feed img:not(.ball-triangle),
+.feed img:not(.CD),
 .feed video,
 .feed iframe,
 .feed svg,

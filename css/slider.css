@@ -2,7 +2,12 @@
     top: 200px;
     bottom: 200px;
     height: calc(100vh - 402px);
-    width: 255px;
+    position: fixed;
+    border-top: 1px dotted #f91a2a;
+    border-bottom: 1px dotted #f91a2a;
+    right: 281px;
+    z-index: 50;
+    width: 300px;
     margin: auto;
     display: inline-block;
     overflow-x: hidden;
@@ -13,6 +18,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    order: 4;
 }
 .slider::-webkit-scrollbar {
     width: 0px !important;
@@ -73,6 +79,7 @@
     -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
 }
+
 
 .slide>div {
     scroll-snap-align: start;

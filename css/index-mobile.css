@@ -90,7 +90,7 @@ body {
     height: 50px;
 }
 
-#loaderSVG #ball-triangle {
+#loaderSVG #CD {
     height: 50px;
 }
 
@@ -194,13 +194,13 @@ p {
     overflow-x: scroll;
 }
 
-.feed img.ball-triangle {
+.feed img.CD {
     position: fixed;
     bottom: 10px;
     left: 10px;
 }
 
-.feed img:not(.ball-triangle),
+.feed img:not(.CD),
 .feed video,
 .feed iframe,
 .feed svg,

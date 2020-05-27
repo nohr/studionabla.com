@@ -155,6 +155,7 @@ function hideSlide(y) {
     var slider = document.querySelector(".slider");
     if (y != 0) {
         slider.style.display = 'none';
+        maxStep = 30;
     } else {
         slider.style.display = 'block';
     }
@@ -170,7 +171,16 @@ function myFunction(y) {
     var feed = document.getElementById(y);
     feed.style.display = "inline-block";
     feed.style.opacity = 1;
-    var doc = document.querySelector(".bigContainer");
-    doc.style.overflowX = "unset";
-    console.log(y);
+        var doc = document.querySelector(".bigContainer");
+        doc.style.overflowX = "unset";
 }
+
+        function CDchat() {
+            var CDchat = document.getElementById("#CDchat");
+            console.log(CDchat)
+            if (CDchat.style.display != "none") {
+                CDchat.style.display = "none";
+            } else {
+                CDchat.style.display = "block";
+            }
+        }

@@ -26,6 +26,10 @@
     <link rel="stylesheet" media="(max-width:823px)" type="text/css" href="css/index-mobile.css">
     <link rel="stylesheet" media="(max-width:823px)" type="text/css" href="css/slider-mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        var maxStep = 30;
+        var y = 0;
+    </script>
     <script type="text/javascript" src="js/text.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript">
@@ -43,12 +47,13 @@
                 }
             };
             var feed = document.getElementById(y);
-            var main = document.querySelector(".Main");
+            var slider = document.querySelector(".slider");
             var doc = document.querySelector(".bigContainer");
+            doc.style.overflowX = "hidden";
+            slider.style.order = "4";
+            maxStep = 0;
             feed.style.display = "inline-block";
             feed.style.opacity = 0.2;
-            main.style.display = "none";
-            doc.style.overflowX = "hidden";
             const tilt = $('.js-tilt').tilt()
             tilt.on('change', function (e, transforms) {
                 document.getElementById(y)
@@ -61,12 +66,24 @@
                 feed.style.display = "none";
                 var feed = document.getElementById(y - y);
                 feed.style.display = "inline-block";
-                var main = document.querySelector(".Main");
+                var slider = document.querySelector(".slider");
+                slider.style.order = "3";
                 var doc = document.querySelector(".bigContainer");
-                main.style.display = "block";
                 doc.style.overflowX = "unset";
             };
         };
+
+        function CDchat(x) {
+            var doc = document.querySelector(".bigContainer");
+            doc.style.overflowX = "hidden";
+            var CDchat = document.getElementById("CDchat");
+            if (x == 0) {
+                CDchat.style.display = "none";
+            } else if (x == 1) {
+                CDchat.style.display = "block";
+                x = 0;
+            }
+        }
     </script>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon/favicon2x.png" />
     <link rel="mask-icon" href="img/favicon/favicon.svg" />
@@ -76,7 +93,7 @@
 <body>
     <div class="loader">
         <div id="loaderSVG">
-            <img class="ball-triangle" src="img/ball-triangle.svg" />
+            <img class="CD" src="img/CD.svg" />
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 931.86 200.6">
                 <defs>
                     <style>
@@ -256,7 +273,9 @@
             <!-- FEED -->
             <div class="feed">
                 <div id="0" style="display: inline-block;">
-                    <img class="ball-triangle" height="50px" src="img/ball-triangle.svg" />
+                    <a href="#CD" onmouseover="CDchat(1)" onmouseout="CDchat(0)"><img class="CD" height="50px"
+                            src="img/CD.svg" /></a>
+                    <iframe id="CDchat" src="https://studionabla.com/cd"></iframe>
                 </div>
                 <div id="1" style="display: none;">
                     <video autoplay controls preload="lazy" loop>
