@@ -102,7 +102,18 @@ body {
         visibility: hidden;
     }
 }
+#CDchat {
+    overflow: hidden;
+    position: absolute;
+    border: rgba(253, 15, 15, 0) !important;
+    display: none;
+    width: 200px;
+    height: 60px;
+}
 
+.CD {
+    margin-left: 36vw;
+}
 .bigContainer {
     display: flex;
     grid-template-rows: 100%;
