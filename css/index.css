@@ -148,7 +148,9 @@ body {
     margin: auto 15px;
     order: 2;
 }
-
+.caution{
+    color: #F5BB00;
+}
 #nabla-logo {
     display: block;
     margin: auto;
@@ -232,6 +234,7 @@ p {
     -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
 }
 
 #tidal {
