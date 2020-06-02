@@ -46,9 +46,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 1vmax;
     letter-spacing: 0.5px;
     line-height: 4vh;
+}
+
+body {
+    font-size: 12px;
 }
 
 body,
@@ -102,6 +105,7 @@ body {
         visibility: hidden;
     }
 }
+
 #CDchat {
     overflow: hidden;
     position: absolute;
@@ -115,19 +119,21 @@ body {
     margin-left: 36vw;
     cursor: progress;
 }
+
 .bigContainer {
     display: flex;
     grid-template-rows: 100%;
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 20;
     top: 0;
     left: 0;
 }
 
 .container {
     display: inline-grid;
-    grid-template-columns: 280px 255px calc(100vw - 966px) 281px;
+    grid-template-columns: 280px calc(100vw - (561px + 35vw)) 10px 281px;
     grid-gap: 50px;
     margin: auto 0;
     height: 100%;
@@ -135,14 +141,22 @@ body {
 }
 
 .Main {
-    display: grid;
+    display: flex;
     grid-template-rows: 50% 50%;
     margin: auto 15px;
+    order: 2;
+    overflow-y: scroll;
+    height: calc(100vh - 302px);
+}
+
+.caution {
+    color: #F5BB00;
 }
 
 #nabla-logo {
     display: block;
     margin: auto;
+    order: 1;
 }
 
 #nabla-logo #logo {
@@ -151,6 +165,10 @@ body {
     left: 79px;
     z-index: 90;
     cursor: pointer;
+}
+
+.cls-1 {
+    fill: #f91a2a;
 }
 
 #darkness {
@@ -183,7 +201,7 @@ p {
     text-transform: lowercase;
     margin-left: 30px;
     display: flex;
-    grid-template-rows: .5fr .5fr .75fr 1fr;
+    grid-template-rows: .2fr .2fr .4fr .4fr;
 }
 
 #c1,
@@ -204,11 +222,12 @@ p {
 
 .feed {
     margin: auto;
+    order: 3;
 }
 
 .feed img:not(.CD),
 .feed video,
-.feed iframe,
+.feed iframe:not(#CDchat),
 .feed svg,
 .feed #web {
     height: 40vw;
@@ -217,6 +236,7 @@ p {
     -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
 }
 
 #tidal {
@@ -237,6 +257,28 @@ p {
 #placeHolder {
     display: inline;
 
+}
+
+.WIP {
+    margin-left: 15px;
+}
+
+.feed .x13 {
+    height: 45vw;
+    margin: 0 15px;
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.x13 {
+    width: 1600vw;
+    border: 0px solid #f91a2a !important;
+    background: rgb(83, 108, 195);
+    background: -moz-linear-gradient(90deg, rgba(83, 108, 195, 0.9) 0%, rgba(9, 121, 66, 0.9) 22%, rgba(240, 255, 26, 0.9) 33%, rgba(226, 200, 8, 0.9) 43%, rgba(220, 1, 1, 0.9) 48%, rgba(0, 212, 255, 0.9) 85%, rgba(255, 255, 255, 0.9) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(83, 108, 195, 0.9) 0%, rgba(9, 121, 66, 0.9) 22%, rgba(240, 255, 26, 0.9) 33%, rgba(226, 200, 8, 0.9) 43%, rgba(220, 1, 1, 0.9) 48%, rgba(0, 212, 255, 0.9) 85%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(90deg, rgba(83, 108, 195, 0.9) 0%, rgba(9, 121, 66, 0.9) 22%, rgba(240, 255, 26, 0.9) 33%, rgba(226, 200, 8, 0.9) 43%, rgba(220, 1, 1, 0.9) 48%, rgba(0, 212, 255, 0.9) 85%, rgba(255, 255, 255, 0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#536cc3", endColorstr="#ffffff", GradientType=1);
 }
 
 footer {

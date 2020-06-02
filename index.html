@@ -30,49 +30,8 @@
         var maxStep = 30;
         var y = 0;
     </script>
-    <script type="text/javascript" src="js/text.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript">
-        var mouseOut = false;
-
-        function showMenu(y) {
-            var mouseOut = false;
-            var i;
-            for (i = 0; i < 13; i++) {
-                var x = document.getElementById(i);
-                if (x.style.display == "inline-block") {
-                    x.style.display = "none";
-                } else if (x.style.display == "inline-block") {
-                    x.style.display = "none";
-                }
-            };
-            var feed = document.getElementById(y);
-            var slider = document.querySelector(".slider");
-            var doc = document.querySelector(".bigContainer");
-            doc.style.overflowX = "hidden";
-            slider.style.order = "4";
-            maxStep = 0;
-            feed.style.display = "inline-block";
-            feed.style.opacity = 0.2;
-            const tilt = $('.js-tilt').tilt()
-            tilt.on('change', function (e, transforms) {
-                document.getElementById(y)
-            });
-        };
-
-        function hideMenu(y) {
-            if (mouseOut == false) {
-                var feed = document.getElementById(y);
-                feed.style.display = "none";
-                var feed = document.getElementById(y - y);
-                feed.style.display = "inline-block";
-                var slider = document.querySelector(".slider");
-                slider.style.order = "3";
-                var doc = document.querySelector(".bigContainer");
-                doc.style.overflowX = "unset";
-            };
-        };
-
         function CDchat(x) {
             var doc = document.querySelector(".bigContainer");
             doc.style.overflowX = "hidden";
@@ -114,7 +73,7 @@
     </div>
     <div class="bigContainer">
         <div class="container">
-            <a href="#" style="margin:auto;" onclick="home(0)">
+            <a href="#" id="#nabla" style="margin:auto;" onclick="jump(0)">
                 <div id="nabla-logo" id="0"> <svg id="logo" data-tilt data-name="Layer 1"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 931.86 200.6">
                         <defs>
@@ -140,119 +99,125 @@
             <div id="darkness"></div>
             <!-- SLIDER -->
             <div class="slider">
-                <!-- <a href="#staysafe">
-                    <div class="slide" onmouseover="showMenu(13)" onmouseout="hideMenu(13)" onclick="home(13)"
-                        id="staysafe" data-tilt>
-                        <p class="slideTitle">stay safe</p>
+                <!-- SECTION TEMPLATE
+                    <div class="slide section" onmouseover="showMenu(13)" onmouseout="hideMenu(13)" onclick="section(2)"
+                        data-tilt>
+                        <p class="sectionTitle">Type Design</p>
                         <img data-src="img/slide/slide-13.png" />
-                    </div>
-                </a> -->
-                <div class="section">
-                    <p> 3D Graphics </p>
+                    </div>-->
+                <!--3D GRAPHICS-->
+                <div id="s1" class="slide section" onmouseover="showMenu(1)" onmouseout="hideMenu(1)"
+                    onclick="section(1)" data-tilt>
+                    <p class="sectionTitle">3D Graphics</p>
+                    <img data-src="img/slide/slide-01.jpg" />
                 </div>
-                <a href="#LysergicVisual">
-                    <div class="slide" onmouseover="showMenu(1)" onmouseout="hideMenu(1)" onclick="home(1)"
+
+                <div id="group1" style="display: none;">
+                    <div class="slide" onmouseover="showMenu(1)" onmouseout="hideMenu(1)" onclick="jump(1)"
                         id="LysergicVisual" data-tilt>
                         <p class="slideTitle"><i>Lysergic</i> Visual</p>
-                        <img data-src="img/slide/slide-01.jpg" />
+                        <a href="#LysergicVisual">
+                            <img data-src="img/slide/slide-01.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#PikunikuWalkCycle">
-                    <div class="slide" onmouseover="showMenu(2)" onmouseout="hideMenu(2)" onclick="home(2)"
-                        id="PikunikuWalkCycle" data-tilt>
-                        <p class="slideTitle"><i>Pikuniku</i> Walk Cycle</p>
-                        <img data-src="img/slide/slide-02.jpg" />
-                    </div>
-                </a>
-                <a href="#cyberShades">
-                    <div class="slide" onmouseover="showMenu(3)" onmouseout="hideMenu(3)" onclick="home(3)"
-                        id="cyberShades" data-tilt>
+                    <div class="slide" onmouseover="showMenu(3)" onmouseout="hideMenu(3)" onclick="jump(3)"
+                        id="cyberShades" data-tilt">
                         <p class="slideTitle">cyberShades</p>
-                        <img data-src="img/slide/slide-03.jpg" />
+                        <a href="#cyberShades">
+                            <img data-src="img/slide/slide-03.jpg" />
+                        </a>
                     </div>
-                </a>
-                <div class="section">
-                    <p> Type Design </p>
                 </div>
-                <a href="#Cala">
-                    <div class="slide" onmouseover="showMenu(14)" onmouseout="hideMenu(14)" onclick="home(14)" id="cala"
-                        data-tilt>
-                        <p class="slideTitle">Cala</p>
-                        <img data-src="img/slide/slide-14.jpg" />
-                    </div>
-                </a>
-                <div class="section">
-                    <p> Sound </p>
+                <!--WEB DESIGN-->
+                <div id="s2" class="slide section" onmouseover="showMenu(6)" onmouseout="hideMenu(6)"
+                    onclick="section(2)" data-tilt>
+                    <p class="sectionTitle">Web Design</p>
+                    <img data-src="img/slide/slide-06.jpg" />
                 </div>
-                <a href="#TidalX1015">
-                    <div class="slide" onmouseover="showMenu(4)" onmouseout="hideMenu(4)" onclick="home(4)"
-                        id="TidalX1015" data-tilt>
-                        <p class="slideTitle">TIDAL X: 10/15</p>
-                        <img data-src="img/slide/slide-04.jpg" />
-                    </div>
-                </a>
-                <a href="#FourYearsLater">
-                    <div class="slide" onmouseover="showMenu(5)" onmouseout="hideMenu(5)" onclick="home(5)"
-                        id="FourYearsLater" data-tilt>
-                        <p class="slideTitle"><i>Four Years Later</i></p>
-                        <img data-src="img/slide/slide-05.jpg" />
-                    </div>
-                </a>
-                <div class="section">
-                    <p> Web Design </p>
-                </div>
-                <a href="#nohri.net">
-                    <div class="slide" onmouseover="showMenu(6)" onmouseout="hideMenu(6)" onclick="home(6)"
+
+                <div id="group2" style="display: none;">
+                    <div class="slide" onmouseover="showMenu(6)" onmouseout="hideMenu(6)" onclick="jump(6)"
                         id="nohri.net" data-tilt>
                         <p class="slideTitle">nohri.net</p>
-                        <img data-src="img/slide/slide-06.jpg" />
+                        <a href="#nohri.net">
+                            <img data-src="img/slide/slide-06.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#nohri.xyz">
-                    <div class="slide" onmouseover="showMenu(11)" onmouseout="hideMenu(11)" onclick="home(11)"
+                    <div class="slide" onmouseover="showMenu(11)" onmouseout="hideMenu(11)" onclick="jump(11)"
                         id="nohri.xyz" data-tilt>
                         <p class="slideTitle">nohri.xyz</p>
-                        <img data-src="img/slide/slide-11.jpg" />
+                        <a href="#nohri.xyz">
+                            <img data-src="img/slide/slide-11.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#aite.dev">
-                    <div class="slide" onmouseover="showMenu(12)" onmouseout="hideMenu(12)" onclick="home(12)"
+                    <div class="slide" onmouseover="showMenu(12)" onmouseout="hideMenu(12)" onclick="jump(12)"
                         id="aite.dev" data-tilt>
                         <p class="slideTitle">aite.dev</p>
-                        <img data-src="img/slide/slide-12.jpg" />
+                        <a href="#aite.dev">
+                            <img data-src="img/slide/slide-12.jpg" />
+                        </a>
                     </div>
-                </a>
-                <div class="section">
-                    <p> 2D Graphics </p>
                 </div>
-                <a href="#Heat.wav">
-                    <div class="slide" onmouseover="showMenu(7)" onmouseout="hideMenu(7)" onclick="home(7)"
-                        id="Heat.wav" data-tilt>
-                        <p class="slideTitle">Heat.wav</p>
-                        <img data-src="img/slide/slide-07.jpg" />
+                <!--SOUND-->
+                <div id="s3" class="slide section" onmouseover="showMenu(4)" onmouseout="hideMenu(4)"
+                    onclick="section(3)" data-tilt>
+                    <p class="sectionTitle">Sound</p>
+                    <img data-src="img/slide/slide-04.jpg" />
+                </div>
+
+                <div id="group3" style="display: none;">
+                    <div class="slide" onmouseover="showMenu(4)" onmouseout="hideMenu(4)" onclick="jump(4)"
+                        id="TidalX1015" data-tilt>
+                        <p class="slideTitle">TIDAL X: 10/15</p>
+                        <a href="#TidalX1015">
+                            <img data-src="img/slide/slide-04.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#NXGN">
-                    <div class="slide" onmouseover="showMenu(8)" onmouseout="hideMenu(8)" onclick="home(8)" id="NXGN"
+                    <div class="slide" onmouseover="showMenu(5)" onmouseout="hideMenu(5)" onclick="jump(5)"
+                        id="FourYearsLater" data-tilt>
+                        <p class="slideTitle"><i>Four Years Later</i></p>
+                        <a href="#FourYearsLater">
+                            <img data-src="img/slide/slide-05.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <!--2D GRAPHICS-->
+                <div id="s4" class="slide section" onmouseover="showMenu(14)" onmouseout="hideMenu(14)"
+                    onclick="section(4)" data-tilt>
+                    <p class="sectionTitle">2D Graphics</p>
+                    <img data-src="img/slide/slide-14.jpg" />
+                </div>
+
+                <div id="group4" style="display: none;">
+                    <div class="slide" onmouseover="showMenu(14)" onmouseout="hideMenu(14)" onclick="jump(14)" id="Cala"
                         data-tilt>
-                        <p class="slideTitle">NXGN</p>
-                        <img data-src="img/slide/slide-08.jpg" />
+                        <p class="slideTitle">Cala</p>
+                        <a href="#Cala">
+                            <img data-src="img/slide/slide-14.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#Realms">
-                    <div class="slide" onmouseover="showMenu(9)" onmouseout="hideMenu(9)" onclick="home(9)" id="Realms"
+                    <div class="slide" onmouseover="showMenu(9)" onmouseout="hideMenu(9)" onclick="jump(9)" id="Realms"
                         data-tilt>
                         <p class="slideTitle"><i>Realms</i></p>
-                        <img data-src="img/slide/slide-09.jpg" />
+                        <a href="#Realms">
+                            <img data-src="img/slide/slide-09.jpg" />
+                        </a>
                     </div>
-                </a>
-                <a href="#Revolutionize">
-                    <div class="slide" onmouseover="showMenu(10)" onmouseout="hideMenu(10)" onclick="home(10)"
-                        id="Revolutionize" data-tilt>
-                        <p class="slideTitle"><i>Revolutionize</i></p>
-                        <img data-src="img/slide/slide-10.jpg" />
+                    <div class="slide" onmouseover="showMenu(7)" onmouseout="hideMenu(7)" onclick="jump(7)"
+                        id="Heat.wav" data-tilt>
+                        <p class="slideTitle">Heat.wav</p>
+                        <a href="#Heat.wav">
+                            <img data-src="img/slide/slide-07.jpg" />
+                        </a>
                     </div>
-                </a>
+                    <div class="slide" onmouseover="showMenu(8)" onmouseout="hideMenu(8)" onclick="jump(8)" id="NXGN"
+                        data-tilt>
+                        <p class="slideTitle">NXGN</p>
+                        <a href="#NXGN">
+                            <img data-src="img/slide/slide-08.jpg" />
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- MAIN -->
             <div class="Main">
@@ -281,7 +246,7 @@
                     <video autoplay controls preload="lazy" loop>
                         <source src="slider/1a.mp4" type="video/mp4" />
                     </video>
-                    <img id="logo1" data-src="slider/1b.svg" />
+                    <img id="logo1" data-src="slider/1b-w.svg" />
                     <img data-src="slider/1c.png" />
                 </div>
                 <div id="2" style="display: none;">
@@ -321,11 +286,11 @@
                 </div>
                 <div id="7" style="display: none;">
                     <img data-src="slider/7b.png" />
-                    <img id="logo7" data-src="slider/7a.svg" />
+                    <img id="logo7" data-src="slider/7a-w.svg" />
                 </div>
                 <div id="8" style="display: none;">
                     <img data-src="slider/8b.jpg" />
-                    <img id="logo8" data-src="slider/8a.svg" />
+                    <img id="logo8" data-src="slider/8a-w.svg" />
                 </div>
                 <div id="9" style="display: none;">
                     <img data-src="slider/9a.jpg" />
@@ -397,6 +362,8 @@
                     });
                 });
             }
+            //VR counter and clicker
+            var counter = document.getElementById("counter");
         };
         // lazy loader
         const images = document.querySelectorAll("[data-src]");
@@ -430,136 +397,40 @@
         images.forEach(image => {
             imgObserver.observe(image);
         })
-
+        // BLACK OR WHITE IMAGES
         function blackOrWhite(y) {
             if (y == 1) {
                 if (
                     window.matchMedia &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                    window.matchMedia("(prefers-color-scheme: light)").matches
                 ) {
-                    document.getElementById("logo1").src = "slider/1b-w.svg";
+                    document.getElementById("logo1").src = "slider/1b.svg";
                 } else {
                     return;
                 }
             } else if (y == 7) {
                 if (
                     window.matchMedia &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                    window.matchMedia("(prefers-color-scheme: light)").matches
                 ) {
-                    document.getElementById("logo7").src = "slider/7a-w.svg";
+                    document.getElementById("logo7").src = "slider/7a.svg";
                 } else {
                     return;
                 }
             } else if (y == 8) {
                 if (
                     window.matchMedia &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                    window.matchMedia("(prefers-color-scheme: light)").matches
                 ) {
-                    document.getElementById("logo8").src = "slider/8a-w.svg";
+                    document.getElementById("logo8").src = "slider/8a.svg";
                 } else {
                     return;
                 }
             }
         }
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Handler when the DOM is fully loaded
-            var x = "https://studionabla.com/";
-            //var x = "http://127.0.0.1:5500/";
-            //var x = "192.168.15:5500/";
-            if (window.location == x) {
-                myFunction(0);
-            } else if (window.location == x + `#LysergicVisual`) {
-                myFunction(1);
-            } else if (window.location == x + `#PikunikuWalkCycle`) {
-                myFunction(2);
-            } else if (window.location == x + `#cyberShades`) {
-                myFunction(3);
-            } else if (window.location == x + `#TidalX1015`) {
-                myFunction(4);
-            } else if (window.location == x + `#FourYearsLater`) {
-                myFunction(5);
-            } else if (window.location == x + `#nohri.net`) {
-                myFunction(6);
-            } else if (window.location == x + `#Heat.wav`) {
-                myFunction(7);
-            } else if (window.location == x + `#NXGN`) {
-                myFunction(8);
-            } else if (window.location == x + `#Realms`) {
-                myFunction(9);
-            } else if (window.location == x + `#Revolutionize`) {
-                myFunction(10);
-            } else if (window.location == x + `#nohri.xyz`) {
-                myFunction(11);
-            } else if (window.location == x + `#aite.dev`) {
-                myFunction(12);
-            } else if (window.location == x + `#staysafe`) {
-                myFunction(13);
-            } else if (window.location == x + `#Cala`) {
-                myFunction(14);
-            } else {
-                myFunction(0);
-            }
-        })
-        //VR counter and clicker
-        var counter = document.getElementById("counter");
-        var k = 0;
-
-        //Nabla click slide scroll
-        var scrollHeight = 0;
-        var slider = document.querySelector(".slider");
-        var x = 600;
-        var z = 50;
-
-        function scrollWin() {
-            var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-            x = x * plusOrMinus;
-            z = z * plusOrMinus;
-
-            function recoil() {
-                slider.scrollBy({
-                    top: z,
-                    behavior: "smooth"
-                });
-            };
-            if (scrollHeight >= 0) {
-                slider.scrollBy({
-                    top: x,
-                    behavior: "smooth"
-                });
-                setTimeout(recoil, 400);
-                scrollHeight += (x + z);
-            }
-        }
-
-        function home(y) {
-            if (y == 0 && k <= 29) {
-
-                counter.innerHTML = k;
-                if (k == 10) {
-                    counter.style.display = "block";
-                } else if (k >= 20) {
-                    scrollWin();
-                } else if (k == 30) {
-                    window.open(document.URL + "/vr", "_blank")
-                }
-            };
-            placeText(y);
-            hideSlide(y);
-            var doc = document.querySelector(".bigContainer");
-            doc.style.overflowX = "unset";
-            var feed = document.getElementById(y);
-            feed.style.display = "inline-block";
-            feed.style.opacity = 1;
-        };
-    </script>
-    <!-- <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-        <script>
-          var myLandbot = new LandbotLivechat({
-            index: 'https://landbot.io/u/H-386997-YJL2HP2SV47JT2ND/index.html',
-          });
-        </script>-->
+    <script type='text/javascript' src="js/url.js"></script>
+    <script type="text/javascript" src="js/text.js"></script>
     <script type='text/javascript' src="js/scroll.js"></script>
 </body>
 

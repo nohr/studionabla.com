@@ -133,7 +133,7 @@ function handleMousemove( event ) {
         // the user has made it "through the edge" when calculating the delta.
         // Then, that use that percentage to back-off from the "max" step value.
         if (y != 0){
-            maxStep = 0;
+            maxStep = 10;
         };
 
         // Should we scroll left?
@@ -186,8 +186,8 @@ function drawEdge() {
     var edge = document.createElement("span");
     edge.style.position = "fixed";
     edge.style.zIndex = "-3"; 
-    edge.style.top = edgeSize + "px";
-    edge.style.bottom = edgeSize + "px";
+    edge.style.top = edgeSize - 50 + "px";
+    edge.style.bottom = edgeSize - 50 + "px";
     edge.style.left = edgeSize + 80 + "px";
     edge.style.right =  edgeSize + 81 + "px";
     edge.style.border = "1px solid #f91a2a";

@@ -1,8 +1,8 @@
 html {
     overflow: hidden;
     height: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
 }
 
 * {
@@ -48,17 +48,11 @@ body {
     letter-spacing: 0.5px;
     line-height: 4vh;
 }
-@media (min-width: 1366px) {
-    body {
-            font-size: 1.2vmin;
-    }
+
+body {
+    font-size: 12px;
 }
 
-@media (max-width:1366px) {
-    body {
-            font-size: 1.5vmin;
-    }
-}
 body,
 html {
     margin: 0;
@@ -112,7 +106,7 @@ body {
 }
 #CDchat{
    overflow: hidden; 
-    position: absolute;
+    margin-left: 36vw;
    border: rgba(253, 15, 15, 0)!important;
    display: none;
    width: 200px;
@@ -135,7 +129,7 @@ body {
 
 .container {
     display: inline-grid;
-    grid-template-columns: 280px calc(100vw - (561px + 35vw)) 10px 281px;
+    grid-template-columns: 280px calc(100vw - (561px + 35vw)) 100px 281px;
     grid-gap: 50px;
     margin: auto 0;
     height: 100%;
@@ -147,6 +141,9 @@ body {
     grid-template-rows: 50% 50%;
     margin: auto 15px;
     order: 2;
+}
+.main::-webkit-scrollbar {
+    display: none;
 }
 .caution{
     color: #F5BB00;
@@ -199,7 +196,7 @@ p {
     text-transform: lowercase;
     margin-left: 30px;
     display: flex;
-    grid-template-rows: .5fr .5fr .75fr 1fr;
+    grid-template-rows: .2fr .2fr .4fr .4fr;
 }
 
 #c1,
