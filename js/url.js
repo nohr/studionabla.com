@@ -1,5 +1,5 @@
         document.addEventListener("DOMContentLoaded", function () {
-            var url = "https://studionabla.com/";//TODO
+            var url = "https://studionabla.com/"; //TODO
             //var url = "http://127.0.0.1:5500/";
             //var url = "192.168.x:5500/";
             if (window.location == url) {
@@ -30,7 +30,7 @@
                 myFunction(12);
             } else if (window.location == url + `#staysafe`) {
                 myFunction(13);
-            } else if (window.location == url + `#Cala`) {
+            } else if (window.location == url + `#EkoDigital`) {
                 myFunction(14);
             } else {
                 myFunction(0);

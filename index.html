@@ -99,12 +99,42 @@
             <div id="darkness"></div>
             <!-- SLIDER -->
             <div class="slider">
-                <!-- SECTION TEMPLATE
-                    <div class="slide section" onmouseover="showMenu(13)" onmouseout="hideMenu(13)" onclick="section(2)"
+                <!--2D GRAPHICS-->
+                <div id="s4" class="slide section" onmouseover="showMenu(14)" onmouseout="hideMenu(14)"
+                    onclick="section(4)" data-tilt>
+                    <p class="sectionTitle">2D Graphics</p>
+                    <img data-src="img/slide/slide-14.jpg" />
+                </div>
+
+                <div id="group4" style="display: none;">
+                    <div class="slide" onmouseover="showMenu(14)" onmouseout="hideMenu(14)" onclick="jump(14)"
+                        id="EkoDigital" data-tilt>
+                        <p class="slideTitle">Eko Digital</p>
+                        <a href="#EkoDigital">
+                            <img data-src="img/slide/slide-14.jpg" />
+                        </a>
+                    </div>
                         data-tilt>
-                        <p class="sectionTitle">Type Design</p>
-                        <img data-src="img/slide/slide-13.png" />
-                    </div>-->
+                        <p class="slideTitle"><i>Realms</i></p>
+                        <a href="#Realms">
+                            <img data-src="img/slide/slide-09.jpg" />
+                        </a>
+                    </div>
+                    <div class="slide" onmouseover="showMenu(7)" onmouseout="hideMenu(7)" onclick="jump(7)"
+                        id="Heat.wav" data-tilt>
+                        <p class="slideTitle">Heat.wav</p>
+                        <a href="#Heat.wav">
+                            <img data-src="img/slide/slide-07.jpg" />
+                        </a>
+                    </div>
+                    <div class="slide" onmouseover="showMenu(8)" onmouseout="hideMenu(8)" onclick="jump(8)" id="NXGN"
+                        data-tilt>
+                        <p class="slideTitle">NXGN</p>
+                        <a href="#NXGN">
+                            <img data-src="img/slide/slide-08.jpg" />
+                        </a>
+                    </div>
+                </div>
                 <!--3D GRAPHICS-->
                 <div id="s1" class="slide section" onmouseover="showMenu(1)" onmouseout="hideMenu(1)"
                     onclick="section(1)" data-tilt>
@@ -181,43 +211,7 @@
                         </a>
                     </div>
                 </div>
-                <!--2D GRAPHICS-->
-                <div id="s4" class="slide section" onmouseover="showMenu(14)" onmouseout="hideMenu(14)"
-                    onclick="section(4)" data-tilt>
-                    <p class="sectionTitle">2D Graphics</p>
-                    <img data-src="img/slide/slide-14.jpg" />
-                </div>
 
-                <div id="group4" style="display: none;">
-                    <div class="slide" onmouseover="showMenu(14)" onmouseout="hideMenu(14)" onclick="jump(14)" id="Cala"
-                        data-tilt>
-                        <p class="slideTitle">Cala</p>
-                        <a href="#Cala">
-                            <img data-src="img/slide/slide-14.jpg" />
-                        </a>
-                    </div>
-                    <div class="slide" onmouseover="showMenu(9)" onmouseout="hideMenu(9)" onclick="jump(9)" id="Realms"
-                        data-tilt>
-                        <p class="slideTitle"><i>Realms</i></p>
-                        <a href="#Realms">
-                            <img data-src="img/slide/slide-09.jpg" />
-                        </a>
-                    </div>
-                    <div class="slide" onmouseover="showMenu(7)" onmouseout="hideMenu(7)" onclick="jump(7)"
-                        id="Heat.wav" data-tilt>
-                        <p class="slideTitle">Heat.wav</p>
-                        <a href="#Heat.wav">
-                            <img data-src="img/slide/slide-07.jpg" />
-                        </a>
-                    </div>
-                    <div class="slide" onmouseover="showMenu(8)" onmouseout="hideMenu(8)" onclick="jump(8)" id="NXGN"
-                        data-tilt>
-                        <p class="slideTitle">NXGN</p>
-                        <a href="#NXGN">
-                            <img data-src="img/slide/slide-08.jpg" />
-                        </a>
-                    </div>
-                </div>
             </div>
             <!-- MAIN -->
             <div class="Main">
@@ -316,7 +310,6 @@
                     <div class="x13"></div>
                 </div>
                 <div id="14" style="display: none;">
-                    <p class="WIP caution">! This is a work in progress</p>
                     <img data-src="slider/14a.png" style="margin-left: 15px;" />
                     <img data-src="slider/14b.png" style="margin-left: 15px;" />
                     <img data-src="slider/14c.png" style="margin-left: 15px;" />
@@ -332,6 +325,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
     <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+
     <script>
         window.onload = function () {
             const loader = document.querySelector(".loader");

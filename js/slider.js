@@ -70,7 +70,7 @@
             var x = document.getElementById(z);
             if (x.style.display == "none" || x.style.display == "null") {
                 x.style.display = "block";
-                head.style.opacity = 0.3;
+                head.style.opacity = 0.1;
                 head.style.border = "1px solid #f91a2a";
                 head.style.borderRadius = "5px 5px 5px 5px";
             } else {
@@ -82,6 +82,7 @@
 
         //VR counter and clicker
         var k = 0;
+
         function jump(y) {
             if (y == 0 && k <= 29) {
                 k++
