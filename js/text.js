@@ -54,20 +54,20 @@ function placeText(y) {
         } else if (id == "2") {
             text.innerHTML = text2;
             c1.innerHTML = "";
-            c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2020";
-            c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
-            c4.innerHTML = "<span id ='capTitle'>Media</span><br> 3D Modelling & Animation";
+            c2.innerHTML = "";
+            c3.innerHTML = "";
+            c4.innerHTML = "";
             text.style.content = "2";
         } else if (id == "3") {
             text.innerHTML = text3;
-            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> cyberShades";
+            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> cyberShades <br> <a href='https://instagram.com/a/r/?effect_id=498584427742332'>Download</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span><br> 3D Modelling & Instagram Filter Creation";
             text.style.content = "3";
         } else if (id == "4") {
             text.innerHTML = text4;
-            c1.innerHTML = "<span id ='capTitle'>Client</span><br> Tidal";
+            c1.innerHTML = "<span id ='capTitle'>Client</span><br> Tidal <br> <a href='https://listen.tidal.com/artist/6712922/video/66200400'>watch</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
             c3.innerHTML = "<span id ='capTitle'>Team</span><br>  A. Eboigbe (implementation) & MeLo-X (direction)";
             c4.innerHTML = "<span id ='capTitle'>Media</span><br>  Sound Design";
@@ -81,14 +81,14 @@ function placeText(y) {
             text.style.content = "5";
         } else if (id == "6") {
             text.innerHTML = text6;
-            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/'>visit</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development & EP Artwork";
             text.style.content = "6";
         } else if (id == "7") {
             text.innerHTML = text7;
-            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Heat.wav";
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Heat.wav <br> <a href='https://heatwav.co/'>visit</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2017";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Wordmark Design";
@@ -109,35 +109,35 @@ function placeText(y) {
             text.style.content = "9";
         } else if (id == "10") {
             text.innerHTML = text10;
-            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Mia Gladstone";
-            c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-            c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (implementaion) & Mia Gladstone (direction)";
-            c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Song Artwork";
+            c1.innerHTML = "";
+            c2.innerHTML = "";
+            c3.innerHTML = "";
+            c4.innerHTML = "";
             text.style.content = "10";
         } else if (id == "11") {
             text.innerHTML = text11;
-            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/nohri.xyz/'>visit</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
             text.style.content = "11";
         } else if (id == "12") {
             text.innerHTML = text12;
-            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe";
+            c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe <br> <a href='https://nohr.github.io/Aite.dev/'>visit</a>";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
             text.style.content = "12";
         } else if (id == "13") {
             text.innerHTML = text13;
-            c1.innerHTML = "<span id ='capTitle'>scroll</span> <br> down";
-            c2.innerHTML = "<span id ='capTitle'></span>";
+            c1.innerHTML = "";
+            c2.innerHTML = "";
             c3.innerHTML = "";
-            c4.innerHTML = "<span id ='capTitle'>stay</span> <br> safe";
+            c4.innerHTML = "";
             text.style.content = "13";
         } else if (id == "14") {
             text.innerHTML = text14;
-            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> Eko Digital";
+            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> Eko Digital <br> *coming July 7th*";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Type Design";
