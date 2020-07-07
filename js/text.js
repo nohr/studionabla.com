@@ -137,7 +137,7 @@ function placeText(y) {
             text.style.content = "13";
         } else if (id == "14") {
             text.innerHTML = text14;
-            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> Eko Digital <br> *coming July 7th*";
+            c1.innerHTML = "<span id ='capTitle'>Title</span> <br> Eko Digital <br> *coming soon*";
             c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
             c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
             c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Type Design";
