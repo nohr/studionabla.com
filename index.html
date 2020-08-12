@@ -100,10 +100,9 @@
             <!-- SLIDER -->
             <div class="slider">
                 <!--2D GRAPHICS-->
-                <div id="s4" class="slide section" onmouseover="showMenu(14)" onmouseout="hideMenu(14)"
+                <div id="s4" class="slide section"
                     onclick="section(4)" data-tilt>
                     <p class="sectionTitle">2D Graphics</p>
-                    <img data-src="img/slide/slide-14.jpg" />
                 </div>
 
                 <div id="group4" style="display: none;">
@@ -137,10 +136,9 @@
                     </div>
                 </div>
                 <!--3D GRAPHICS-->
-                <div id="s1" class="slide section" onmouseover="showMenu(1)" onmouseout="hideMenu(1)"
+                <div id="s1" class="slide section"
                     onclick="section(1)" data-tilt>
                     <p class="sectionTitle">3D Graphics</p>
-                    <img data-src="img/slide/slide-01.jpg" />
                 </div>
 
                 <div id="group1" style="display: none;">
@@ -151,6 +149,13 @@
                             <img data-src="img/slide/slide-01.jpg" />
                         </a>
                     </div>
+                    <div class="slide" onmouseover="showMenu(13)" onmouseout="hideMenu(13)" onclick="jump(13)"
+                    id="StudioNablaVR" data-tilt>
+                    <p class="slideTitle">Studio Nabla <i>VR</i></p>
+                    <a href="#StudioNablaVR">
+                        <img data-src="img/slide/slide-13.jpg" />
+                    </a>
+                </div>
                     <div class="slide" onmouseover="showMenu(3)" onmouseout="hideMenu(3)" onclick="jump(3)"
                         id="cyberShades" data-tilt">
                         <p class="slideTitle">cyberShades</p>
@@ -160,10 +165,9 @@
                     </div>
                 </div>
                 <!--WEB DESIGN-->
-                <div id="s2" class="slide section" onmouseover="showMenu(6)" onmouseout="hideMenu(6)"
+                <div id="s2" class="slide section"
                     onclick="section(2)" data-tilt>
                     <p class="sectionTitle">Web Design</p>
-                    <img data-src="img/slide/slide-06.jpg" />
                 </div>
 
                 <div id="group2" style="display: none;">
@@ -190,10 +194,9 @@
                     </div>
                 </div>
                 <!--SOUND-->
-                <div id="s3" class="slide section" onmouseover="showMenu(5)" onmouseout="hideMenu(5)"
+                <div id="s3" class="slide section"
                     onclick="section(3)" data-tilt>
                     <p class="sectionTitle">Sound</p>
-                    <img data-src="img/slide/slide-05.jpg" />
                 </div>
 
                 <div id="group3" style="display: none;">
@@ -302,10 +305,14 @@
                         width="545"></iframe>
                 </div>
                 <div id="13" style="display: none;">
-                    <div class="x13"></div>
+                    <p class="WIP caution">! This is a work in progress</p>
+                    <iframe id="snvr"
+                    src="https://studionabla.com/vr/"
+                    width="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <div id="14" style="display: none;">
                     <img data-src="slider/14a.png" style="margin-left: 15px;" />
+                    <img data-src="slider/14b-w.svg" />
                 </div>
             </div>
         </div>
@@ -363,6 +370,7 @@
             blackOrWhite(1)
             blackOrWhite(7)
             blackOrWhite(8)
+            blackOrWhite(14)
             img.removeAttribute("data-src")
         }
 
@@ -409,6 +417,16 @@
                     window.matchMedia("(prefers-color-scheme: light)").matches
                 ) {
                     document.getElementById("logo8").src = "slider/8a.svg";
+                } else {
+                    return;
+                }
+            }
+            else if (y == 14) {
+                if (
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                ) {
+                    document.getElementById("logo8").src = "slider/14b.svg";
                 } else {
                     return;
                 }

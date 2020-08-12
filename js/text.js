@@ -52,7 +52,7 @@ function placeText(y) {
       c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
       c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
       c4.innerHTML =
-        "<span id ='capTitle'>Media</span><br> 3D Animation & Wordmark Design";
+        "<span id ='capTitle'>Media</span><br> 3D Modeling/Animation & Wordmark Design";
       text.style.content = "1";
     } else if (id == "2") {
       text.innerHTML = text2;
@@ -68,7 +68,7 @@ function placeText(y) {
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
       c4.innerHTML =
-        "<span id ='capTitle'>Media</span><br> 3D Modelling & Instagram Filter Creation";
+        "<span id ='capTitle'>Media</span><br> 3D Modeling & Instagram Filter Creation";
       text.style.content = "3";
     } else if (id == "4") {
       text.innerHTML = text4;
@@ -146,10 +146,12 @@ function placeText(y) {
       text.style.content = "12";
     } else if (id == "13") {
       text.innerHTML = text13;
-      c1.innerHTML = "";
-      c2.innerHTML = "";
-      c3.innerHTML = "";
-      c4.innerHTML = "";
+      c1.innerHTML =
+        "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://studionabla.com/vr/'>Visit</a>";
+      c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2020";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c4.innerHTML =
+        "<span id ='capTitle'>Media</span> <br>  3D Modeling/Animation & Unity Development";
       text.style.content = "13";
     } else if (id == "14") {
       text.innerHTML = text14;
