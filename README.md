@@ -1,2 +1,2 @@
-# studionabla.com
-Studio Nabla Homepage
+# nabla.ooo
+Nabla Homepage
