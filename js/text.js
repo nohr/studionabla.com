@@ -1,9 +1,9 @@
 if (window.matchMedia("only screen and (min-width: 1200px)").matches) {
   var text0 =
-    "Studio Nabla was founded by Aite Eboigbe in 2017 to study new and innovative directions in digital graphics, sound design, web design, and recently, type design. Based in Brooklyn, New York, the small, interdisciplinary studio explores the brutalist style and its implications in the digital age. <br>To view a work, scroll through the sidebar to the right, select a work, and then  mouse over the red border to scroll left or right. <br> <br> <span> If you would like to inquire about my services, feel free to contact me at <a href='mailto:info@studionabla.com'>info@studionabla.com</a>.";
+    "Studio Nabla was founded by Aite Eboigbe in 2017 to study new and innovative directions in digital graphics, sound design, web design, and recently, type design. Based in Brooklyn, New York, the small, interdisciplinary studio explores the brutalist style and its implications in the digital age. <br>To view a work, scroll through the sidebar to the right, select a work, and then  mouse over the red border to scroll left or right. <br> <br> <span> If you would like to inquire about my services, feel free to contact me at <a href='mailto:aite@nabla.ooo'>aite@nabla.ooo</a>.";
 } else if (window.matchMedia("only screen and (max-width: 1200px)").matches) {
   var text0 =
-    "Studio Nabla was founded by Aite Eboigbe in 2017 to study new and innovative directions in digital graphics, sound design, web design, and recently, type design. Based in Brooklyn, New York, the small, interdisciplinary studio explores the brutalist style and its implications in the digital age. <br>To view a work, scroll through the sidebar above, select a work, and then scroll horizontally. <br> <br> <span> If you would like to inquire about my services, feel free to contact me at <a href='mailto:info@studionabla.com'>info@studionabla.com</a>.";
+    "Studio Nabla was founded by Aite Eboigbe in 2017 to study new and innovative directions in digital graphics, sound design, web design, and recently, type design. Based in Brooklyn, New York, the small, interdisciplinary studio explores the brutalist style and its implications in the digital age. <br>To view a work, scroll through the sidebar above, select a work, and then scroll horizontally. <br> <br> <span> If you would like to inquire about my services, feel free to contact me at <a href='mailto:aite@nabla.ooo'>aite@nabla.ooo</a>.";
 }
 var text1 = "";
 var text2 = "";
@@ -64,7 +64,7 @@ function placeText(y) {
     } else if (id == "3") {
       text.innerHTML = text3;
       c1.innerHTML =
-        "<span id ='capTitle'>Title</span> <br> cyberShades <br> <a href='https://instagram.com/a/r/?effect_id=498584427742332'>Download</a>";
+        "<span id ='capTitle'>Title</span> <br> cyberShades <br> <a href='https://instagram.com/a/r/?effect_id=498584427742332' target='_blank'>Download</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
       c4.innerHTML =
@@ -73,7 +73,7 @@ function placeText(y) {
     } else if (id == "4") {
       text.innerHTML = text4;
       c1.innerHTML =
-        "<span id ='capTitle'>Client</span><br> Tidal <br> <a href='https://listen.tidal.com/artist/6712922/video/66200400'>watch</a>";
+        "<span id ='capTitle'>Client</span><br> Tidal <br> <a href='https://1015.tidal.com/' target='_blank'>watch</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
       c3.innerHTML =
         "<span id ='capTitle'>Team</span><br>  A. Eboigbe (implementation) & MeLo-X (direction)";
@@ -91,7 +91,7 @@ function placeText(y) {
     } else if (id == "6") {
       text.innerHTML = text6;
       c1.innerHTML =
-        "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/'>visit</a>";
+        "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
       c4.innerHTML =
@@ -100,7 +100,7 @@ function placeText(y) {
     } else if (id == "7") {
       text.innerHTML = text7;
       c1.innerHTML =
-        "<span id ='capTitle'>Client</span> <br>  Heat.wav <br> <a href='https://heatwav.co/'>visit</a>";
+        "<span id ='capTitle'>Client</span> <br>  Heat.wav <br> <a href='https://heatwav.co/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2017";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Wordmark Design";
@@ -131,7 +131,7 @@ function placeText(y) {
     } else if (id == "11") {
       text.innerHTML = text11;
       c1.innerHTML =
-        "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/nohri.xyz/'>visit</a>";
+        "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/nohri.xyz/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
@@ -147,7 +147,7 @@ function placeText(y) {
     } else if (id == "13") {
       text.innerHTML = text13;
       c1.innerHTML =
-        "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://studionabla.com/vr/'>Visit</a>";
+        "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://nabla.ooo/vr/' target='_blank'>Visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2020";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
       c4.innerHTML =
@@ -156,7 +156,7 @@ function placeText(y) {
     } else if (id == "14") {
       text.innerHTML = text14;
       c1.innerHTML =
-        "<span id ='capTitle'>Title</span> <br> Eko Digital <br><a href='https://gum.co/ekodigi'>download</a>";
+        "<span id ='capTitle'>Title</span> <br> Eko Digital <br><a href='https://gum.co/ekodigi' target='_blank'>download</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Type Design";
