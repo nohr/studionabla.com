@@ -1,5 +1,5 @@
         document.addEventListener("DOMContentLoaded", function () {
-            var url = "https://studionabla.com/"; //TODO
+            var url = "https://nabla.ooo/"; //TODO
             //var url = "http://127.0.0.1:5500/";
             //var url = "192.168.x:5500/";
             if (window.location == url) {
@@ -10,7 +10,7 @@
                 section(1);
             } else if (window.location == url + `#cyberShades`) {
                 myFunction(3);
-            } else if (window.location == url + `#Tidalurl1015`) {
+            } else if (window.location == url + `#TidalXl1015`) {
                 myFunction(4);
             } else if (window.location == url + `#FourYearsLater`) {
                 myFunction(5);
@@ -18,13 +18,13 @@
                 myFunction(6);
             } else if (window.location == url + `#Heat.wav`) {
                 myFunction(7);
-            } else if (window.location == url + `#NurlGN`) {
+            } else if (window.location == url + `#NXlGN`) {
                 myFunction(8);
             } else if (window.location == url + `#Realms`) {
                 myFunction(9);
             } else if (window.location == url + `#Revolutionize`) {
                 myFunction(10);
-            } else if (window.location == url + `#nohri.urlyz`) {
+            } else if (window.location == url + `#nohri.xyz`) {
                 myFunction(11);
             } else if (window.location == url + `#aite.dev`) {
                 myFunction(12);

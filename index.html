@@ -305,7 +305,7 @@
                 </div>
                 <div id="14" style="display: none;">
                     <img data-src="slider/14a.png" style="margin-left: 15px;" />
-                    <img data-src="slider/14b-w.svg" />
+                    <img id="logo14" data-src="slider/14b-w.svg" />
                 </div>
             </div>
         </div>
@@ -419,7 +419,7 @@
                     window.matchMedia &&
                     window.matchMedia("(prefers-color-scheme: light)").matches
                 ) {
-                    document.getElementById("logo8").src = "slider/14b.svg";
+                    document.getElementById("logo14").src = "slider/14b.svg";
                 } else {
                     return;
                 }
