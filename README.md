@@ -1,3 +1,5 @@
 # nabla.ooo
-Nabla Homepage coded with native javascript in 2019 and has been maintained since.
+Nabla Homepage coded with native javascript in 2019.
+
+### Depreciated as of December 2021.
 
