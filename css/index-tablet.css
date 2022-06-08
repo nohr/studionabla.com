@@ -109,7 +109,9 @@ body {
 #CDchat {
     overflow: hidden;
     position: absolute;
-    border: rgba(253, 15, 15, 0) !important;
+    margin-left: 31vw;
+    /* border: 1px solid #f91a2a !important; */
+    border: 1px solid #00000000 !important;
     display: none;
     width: 200px;
     height: 60px;
@@ -117,7 +119,11 @@ body {
 
 .CD {
     margin-left: 36vw;
-    cursor: progress;
+    cursor: wait;
+}
+
+#0 {
+    grid-template-rows: 0.3fr 1fr !important;
 }
 
 .bigContainer {

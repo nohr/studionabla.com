@@ -9,83 +9,97 @@
 . ######:: ########::
 :......:::........:::
 by nabla
-©2017 - 2021 nabla
+©2017 - 2022 nabla ltd.
 nabla.ooo
 -->
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/css/index.css" rel="stylesheet" />
-    <style>
-      #message {
-        font-size: 15px;
-        color: #f91a2a;
-        line-height: 14px;
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/css/index.css" rel="stylesheet" />
+  <style>
+    #message {
+      font-size: 15px;
+      color: #f91a2a;
+      line-height: 14px;
+      opacity: 1;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.55;
+      }
+
+      70% {
         opacity: 1;
-        animation: pulse 2s infinite;
       }
 
-      @keyframes pulse {
-        0% {
-          opacity: 0.55;
-        }
-
-        70% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0.55;
-        }
+      100% {
+        opacity: 0.55;
       }
+    }
 
-      .loading,
-      div {
-        display: inline;
-      }
+    body {
+      height: 100%;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
-      .loading:after {
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: bottom;
-        -webkit-animation: ellipsis steps(3, end) 900ms infinite;
-        animation: ellipsis steps(3, end) 900ms infinite;
-        content: "\2026";
-        /* ascii code for the ellipsis character */
-        width: 0px;
-      }
-    </style>
-  </head>
+    .loading,
+    div {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
-  <body>
-    <div class="loading">
-      <div id="message"></div>
-    </div>
+    .loading:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-animation: ellipsis steps(3, end) 900ms infinite;
+      animation: ellipsis steps(3, end) 900ms infinite;
+      content: "\2026";
+      /* ascii code for the ellipsis character */
+      width: 0px;
+    }
+  </style>
+</head>
 
-    <script>
-      var SNversion = "1.77"; //TODO Update
-      var CDversion = ".006"; //TODO Update
-      var name = "<b>CD</b>";
-      var messages = [
-        "<i>N Version " + Nversion + " CD Version " + CDversion + "</i>",
-        "<i>hello!</i>",
-        "<i>hello</i>",
-        "&#129300;",
-        "<i>sorry, i can't talk</i>",
-        "<i>welcome to nabla.ooo!</i>",
-        "<i>you can call me:  </i>" + name,
-        "Eko Digital is SO COOL!",
-      ];
-      var rand = messages[Math.floor(Math.random() * messages.length)];
+<body>
+  <div class="loading">
+    <div id="message"></div>
+  </div>
+
+  <script>
+    var Nversion = "1.78"; //TODO Update
+    var CDversion = ".007"; //TODO Update
+    var name = "<b>CD</b>";
+    var messages = [
+      "<i>N Version " + Nversion + " CD Version " + CDversion + "</i>",
+      "<i>hello!</i>",
+      "<i>hello</i>",
+      "&#129300;",
+      "<i>sorry, i can't talk yet!</i>",
+      "<i>welcome to the old studionabla.com!</i>",
+      "<i>you can call me:  </i>" + name,
+      "Eko Digital is SO COOL!",
+    ];
+    var rand = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById("message").innerHTML = rand;
+    window.setInterval(function () {
+      rand = messages[Math.floor(Math.random() * messages.length)];
       document.getElementById("message").innerHTML = rand;
-      window.setInterval(function () {
-        rand = messages[Math.floor(Math.random() * messages.length)];
-        document.getElementById("message").innerHTML = rand;
-      }, 5000);
-    </script>
-  </body>
+    }, 5000);
+  </script>
+</body>
+
 </html>
