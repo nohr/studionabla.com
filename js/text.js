@@ -147,7 +147,7 @@ function placeText(y) {
     } else if (id == "13") {
       text.innerHTML = text13;
       c1.innerHTML =
-        "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://nabla.ooo/vr/' target='_blank'>Visit</a>";
+        "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://nohr.github.io/studionabla.com/vr/' target='_blank'>Visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2020";
       c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
       c4.innerHTML =
