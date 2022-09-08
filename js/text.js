@@ -50,7 +50,7 @@ function placeText(y) {
       text.innerHTML = text1;
       c1.innerHTML = "<span id ='capTitle'>Client</span><br> Nohri";
       c2.innerHTML = "<span id ='capTitle'>Year</span><br> 2019";
-      c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span><br> A. Aigbe";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span><br> 3D Modeling/Animation & Wordmark Design";
       text.style.content = "1";
@@ -66,7 +66,7 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Title</span> <br> cyberShades <br> <a href='https://instagram.com/a/r/?effect_id=498584427742332' target='_blank'>Download</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Aigbe";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span><br> 3D Modeling & Instagram Filter Creation";
       text.style.content = "3";
@@ -76,7 +76,7 @@ function placeText(y) {
         "<span id ='capTitle'>Client</span><br> Tidal <br> <a href='https://1015.tidal.com/' target='_blank'>watch</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span><br>  2016";
       c3.innerHTML =
-        "<span id ='capTitle'>Team</span><br>  A. Eboigbe (implementation) & MeLo-X (direction)";
+        "<span id ='capTitle'>Team</span><br>  A. Aigbe (implementation) & MeLo-X (direction)";
       c4.innerHTML = "<span id ='capTitle'>Media</span><br>  Sound Design";
       text.style.content = "4";
     } else if (id == "5") {
@@ -84,7 +84,7 @@ function placeText(y) {
       c1.innerHTML = "<span id ='capTitle'>Client</span> <br> Celine Clarke";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
       c3.innerHTML =
-        "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (direction & implementaion) & Celine Clarke (direction)";
+        "<span id ='capTitle'>Team</span> <br>  A. Aigbe (direction & implementaion) & Celine Clarke (direction)";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span> <br>  Sound Recording, Sound Design & Score";
       text.style.content = "5";
@@ -93,7 +93,7 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span> <br>  Web Development & EP Artwork";
       text.style.content = "6";
@@ -102,14 +102,14 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Client</span> <br>  Heat.wav <br> <a href='https://heatwav.co/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2017";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Wordmark Design";
       text.style.content = "7";
     } else if (id == "8") {
       text.innerHTML = text8;
       c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  NXGN";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2016";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span> <br>  Wordmark Design & Song Artwork";
       text.style.content = "8";
@@ -118,7 +118,7 @@ function placeText(y) {
       c1.innerHTML = "<span id ='capTitle'>Client</span> <br>  Nohri";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
       c3.innerHTML =
-        "<span id ='capTitle'>Team</span> <br>  A. Eboigbe (direction & implementaion), Jheyda McGarrell (photography) & Kyle Castro (illustration)";
+        "<span id ='capTitle'>Team</span> <br>  A. Aigbe (direction & implementaion), Jheyda McGarrell (photography) & Kyle Castro (illustration)";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Album Artwork";
       text.style.content = "9";
     } else if (id == "10") {
@@ -133,15 +133,15 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Client</span> <br>  Nohri <br> <a href='https://nohri.net/nohri.xyz/' target='_blank'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2018";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
       text.style.content = "11";
     } else if (id == "12") {
       text.innerHTML = text12;
       c1.innerHTML =
-        "<span id ='capTitle'>Client</span> <br>  Aite Eboigbe <br> <a href='https://nohr.github.io/Aite.dev/'>visit</a>";
+        "<span id ='capTitle'>Client</span> <br>  Aite Aigbe <br> <a href='https://nohr.github.io/Aite.dev/'>visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2019";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br>  Web Development";
       text.style.content = "12";
     } else if (id == "13") {
@@ -149,7 +149,7 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Title</span> <br> Studio Nabla <i>VR</i> <br> <a href='https://nohr.github.io/studionabla.com/vr/' target='_blank'>Visit</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br>  2020";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br>  A. Aigbe";
       c4.innerHTML =
         "<span id ='capTitle'>Media</span> <br>  3D Modeling/Animation & Unity Development";
       text.style.content = "13";
@@ -158,7 +158,7 @@ function placeText(y) {
       c1.innerHTML =
         "<span id ='capTitle'>Title</span> <br> Eko Digital <br><a href='https://gum.co/ekodigi' target='_blank'>download</a>";
       c2.innerHTML = "<span id ='capTitle'>Year</span> <br> 2020";
-      c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Eboigbe";
+      c3.innerHTML = "<span id ='capTitle'>Team</span> <br> A. Aigbe";
       c4.innerHTML = "<span id ='capTitle'>Media</span> <br> Type Design";
       text.style.content = "14";
     }
